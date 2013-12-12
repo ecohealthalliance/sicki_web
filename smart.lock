@@ -7,7 +7,10 @@
       "datatables": {},
       "SlickGrid": {},
       "jqueryui": {},
-      "Handsontable": {}
+      "Handsontable": {},
+      "dash": {
+        "path": "packages/dash"
+      }
     },
     "packages": {
       "iron-router": {
@@ -17,8 +20,8 @@
       },
       "bootstrap-3": {
         "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
-        "tag": "v0.3.6",
-        "commit": "711dbcabe333c8714298b2fd1de97fdcdae6efa7"
+        "tag": "v0.3.7",
+        "commit": "5dd0d142c870647b910be80bc777b96f0dd45e5e"
       },
       "datatables": {
         "git": "https://github.com/TimHeckel/meteor-datatables.git",
@@ -39,6 +42,9 @@
         "git": "https://github.com/olragon/meteor-handsontable.git",
         "tag": "v0.9.9",
         "commit": "4b86606255d20bb69ae033800406bee6d8ed83a8"
+      },
+      "dash": {
+        "path": "packages/dash"
       }
     }
   }

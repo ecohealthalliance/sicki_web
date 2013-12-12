@@ -5,6 +5,7 @@
     "datatables": {},
     "SlickGrid": {},
     "jqueryui": {},
-    "Handsontable": {}
+    "Handsontable": {},
+    "dash":{"path":"packages/dash"}
   }
 }
