@@ -1,9 +1,10 @@
 Template.slickMin.rendered = function () {
 
-/* collection data
+/* collection data*/
 var data = Entries.find().fetch();
-*/
 
+
+/*
 var data = [
   {
     outbreak: 'Spanish Flu',
@@ -18,6 +19,7 @@ var data = [
     location: 'Canada'
   }
 ];
+*/
 
 /* original data
 var data = [

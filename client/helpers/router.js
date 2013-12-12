@@ -15,7 +15,6 @@ Router.map(function() {
   this.route('tabPage', {path: '/tabs'}),
   this.route('handson', {path: '/handson'}),
   this.route('handson2', {path: '/handson2'}),
-  this.route('handson3', {path: '/handson3'}),
-  this.route('slickMin', {path: '/slickmin'})
+  this.route('handson3', {path: '/handson3'})
 
 });
