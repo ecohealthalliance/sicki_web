@@ -1,30 +1,19 @@
 <template name="dash">
 
+	
 	<div class="row">
-	  <div class="col-md-1">{{outbreak}}</div>
-	  <div class="col-md-1">{{disease}}</div>
-	  <div class="col-md-1">{{location}}</div>
-	  <div class="col-md-1">.col-md-1</div>
-	  <div class="col-md-1">.col-md-1</div>
-	  <div class="col-md-1">.col-md-1</div>
-	  <div class="col-md-1">.col-md-1</div>
-	  <div class="col-md-1">.col-md-1</div>
-	  <div class="col-md-1">.col-md-1</div>
-	  <div class="col-md-1">.col-md-1</div>
-	  <div class="col-md-1">.col-md-1</div>
-	  <div class="col-md-1">.col-md-1</div>
+	  <div class="col-md-3">{{outbreak}}</div>
+	  <div class="col-md-1">
+	  	<div class="row">{{location}}</div>
+	  	<div class="row"><a href={{url}}>Wiki</a></div>
+	  </div>
+	  <div class="col-md-8">
+		{{> tabPage}}
+	  </div>
 	</div>
 	<div class="row">
-	  <div class="col-md-8">.col-md-8</div>
-	  <div class="col-md-4">.col-md-4</div>
-	</div>
-	<div class="row">
-	  <div class="col-md-4">.col-md-4</div>
-	  <div class="col-md-4">.col-md-4</div>
-	  <div class="col-md-4">.col-md-4</div>
-	</div>
-	<div class="row">
-	  <div class="col-md-6">.col-md-6</div>
-	  <div class="col-md-6">.col-md-6</div>
+	  <div class="col-md-1">start year</div>
+	  <div class="col-md-10">timeline</div>
+	  <div class="col-md-1">end year</div>
 	</div>
 </template>
