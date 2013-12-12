@@ -8,5 +8,9 @@ Router.map(function() {
   this.route('entriesGrid', {path: '/grid'}),
   this.route('slickMin', {path: '/slickmin'}),
   this.route('tabPage', {path: '/tabs'}),
-  this.route('dash', {path: '/dash'})
+  this.route('dash', {
+  	path: '/dash/:_id',
+  	data: function () {
+  		return Entries.findOne({_id: this.params._id});
+  	}})
 });
