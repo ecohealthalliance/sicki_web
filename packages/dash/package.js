@@ -5,5 +5,8 @@ Package.on_use(function (api) {
 	api.add_files("lib/tabs.html", "client");
 	api.add_files("lib/tabs.js", "client");
 	api.add_files("lib/dash.html", "client");
-	api.add_files("lib/dash.js", "client");
+	api.add_files("lib/map.css", "client");
+	api.add_files("lib/map.js", "client");
+	api.add_files("lib/soma.png", "client");
+	api.add_files("lib/timer.png", "client");
 });

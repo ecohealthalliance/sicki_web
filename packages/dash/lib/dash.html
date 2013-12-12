@@ -1,19 +1,45 @@
 <template name="dash">
 
-	
 	<div class="row">
-	  <div class="col-md-3">{{outbreak}}</div>
-	  <div class="col-md-1">
-	  	<div class="row">{{location}}</div>
-	  	<div class="row"><a href={{url}}>Wiki</a></div>
-	  </div>
-	  <div class="col-md-8">
-		{{> tabPage}}
-	  </div>
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-6">{{outbreak}}</div>
+				<div class="col-md-6">
+					<div class="row">{{host}}</div>
+					<div class="row">{{eid}}</div>
+				</div>
+			</div>
+			<div class="row">
+				{{> map}}
+			</div>
+		</div>
+
+
+		<div class="col-md-6">
+			{{> tabPage}}
+		</div>
 	</div>
+
 	<div class="row">
-	  <div class="col-md-1">start year</div>
-	  <div class="col-md-10">timeline</div>
-	  <div class="col-md-1">end year</div>
+	  <div class="col-md-1 vertime"><h1>2 <br/> 0 <br/> 0 <br /> 1 </h1></div>
+	  <div class="col-md-10"><img src="/packages/dash/lib/timer.png" /></div>
+	  <div class="col-md-1 vertime"><h1>2 <br/> 0 <br/> 0 <br /> 3 </h1></div>
 	</div>
+</template>
+
+<template name="map">
+  <div class="map">
+    {{#constant}}
+      <svg width="300" height="300">
+        <circle class="callout" cx=-100 cy=-100></circle>
+        <g class="circles"></g>
+        <g class="labels"></g>
+      </svg>
+    {{/constant}}
+    <div>
+      <small class="attribution muted">&copy;
+        <a href="http://www.openstreetmap.org/?lat=37.78212&lon=-122.40146&zoom=15&layers=M"
+           target="_blank">OpenStreetMap</a> contributors</small>
+    </div>
+  </div>
 </template>
