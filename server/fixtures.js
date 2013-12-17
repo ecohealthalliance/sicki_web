@@ -8,7 +8,7 @@ if (Entries.find().count() === 0) {
     x: 0.7589090881347656, 
     y: 0.372, 
     title: "party on",
-    deaths: 9
+    deaths: 10
   }); 
   Entries.insert({
     outbreak: 'Nipah Outbreak',
@@ -19,7 +19,7 @@ if (Entries.find().count() === 0) {
     x: 0.2789090881347656, 
     y: 0.782, 
     title: "party on",
-    deaths: 15
+    deaths: 1
   }); 
   Entries.insert({
     outbreak: 'E Coli',
