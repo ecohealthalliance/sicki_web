@@ -8,6 +8,7 @@ Router.map(function() {
   this.route('entriesGrid', {path: '/grid'}),
   this.route('slickMin', {path: '/slickmin'}),
   this.route('tabPage', {path: '/tabs'}),
+  this.route('pdfPage', {path: '/pdf'}),
   this.route('dash', {
   	path: '/dash/:_id',
   	data: function () {
