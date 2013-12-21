@@ -6,6 +6,9 @@
     "SlickGrid": {},
     "jqueryui": {},
     "Handsontable": {},
-    "dash":{"path":"packages/dash"}
+    "dash": {
+      "path": "packages/dash"
+    },
+    "jquery-ui-bootstrap": {}
   }
 }

@@ -10,7 +10,8 @@
       "Handsontable": {},
       "dash": {
         "path": "packages/dash"
-      }
+      },
+      "jquery-ui-bootstrap": {}
     },
     "packages": {
       "iron-router": {
@@ -35,8 +36,8 @@
       },
       "jqueryui": {
         "git": "https://github.com/mizzao/meteor-jqueryui.git",
-        "tag": "v1.10.3",
-        "commit": "c1c44a17c2e2d92e206dc4ecbaad0b83272de85c"
+        "tag": "v1.10.3r2",
+        "commit": "d54f75cfad37ff8ce6ef9ad49de55738ba921af7"
       },
       "Handsontable": {
         "git": "https://github.com/olragon/meteor-handsontable.git",
@@ -45,6 +46,21 @@
       },
       "dash": {
         "path": "packages/dash"
+      },
+      "jquery-ui-bootstrap": {
+        "git": "https://github.com/TimHeckel/meteor-jquery-ui-bootstrap.git",
+        "tag": "v0.1.2",
+        "commit": "fa742a85639307003e105898e15b631394b63509"
+      },
+      "build-fetcher": {
+        "git": "https://github.com/mizzao/meteor-build-fetcher.git",
+        "tag": "v0.1.0",
+        "commit": "e3813b1fc7f5c576e8e1fa4c51ae6f4687780a35"
+      },
+      "jquery-ui": {
+        "git": "https://github.com/TimHeckel/meteor-jquery-ui.git",
+        "tag": "v1.9.2",
+        "commit": "c437d45edcf1367df8d5ffa8bad2867758030bd2"
       }
     }
   }

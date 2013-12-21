@@ -1,0 +1,30 @@
+.dash {
+
+}
+
+
+#info {
+	
+}
+
+#info h1{
+
+	font-size: 48px; 
+	text-transform: uppercase;
+	margin: 0 0 25px 0;
+
+}
+
+#info h2.label{
+	font-size: 24px; 
+	color: black;
+	display: inline;
+	text-transform: capitalize;
+}
+
+#info h2.value{
+	font-size: 24px; 
+	color: #c0d8f1;
+	display: inline;
+	text-transform: capitalize;
+}
