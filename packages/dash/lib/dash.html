@@ -1,57 +1,58 @@
 <template name="dash">
 	<div class="container">
 
-	<div class="dash">
+		<div class="dash">
 
-		<div class="row">
-			<div class="col-md-6">
-				<div class="row" id="info">
-					<div class="col-md-6"><h1>{{outbreak}}</h1></div>
-					<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="row" id="info">
 						<div class="row">
-							<h2 class="label"> Host: </h2>
-							<h2 class="value"> {{host}} </h2>
+							<div class="ribbon-wrapper">
+								<div class="ribbon-front">
+									<h2 class="eid">&nbsp; EID</h2>
+								</div>
+								<div class="ribbon-edge-topleft"></div>
+								<div class="ribbon-edge-topright"></div>
+								<div class="ribbon-edge-bottomleft"></div>
+								<div class="ribbon-edge-bottomright"></div>
+								<div class="ribbon-back-left"></div>
+								<div class="ribbon-back-right"></div>
+							</div>
 						</div>
-						
 						<div class="row">
-							<h2 class="label"> EID: </h2>
-							<h2 class="value"> {{eid}} </h2>
+
+							<div class="col-md-6">
+								<h1>{{outbreak}}</h1>
+							</div>
+							<div class="col-md-6">
+								<div class="row">
+									<h2 class="label"> Host: </h2>
+									<h2 class="value"> {{host}} </h2>
+								</div>
+
+								<div class="row">
+									<h2 class="label"> EID: </h2>
+									<h2 class="value"> {{eid}} </h2>
+								</div>
+							</div>
 						</div>
 					</div>
+					<div class="row">
+						{{> map}}
+					</div>
 				</div>
-				<div class="row">
-					{{> map}}
+
+
+				<div class="col-md-6">
+					{{> tabPage}}
 				</div>
 			</div>
 
-
-			<div class="col-md-6">
-				{{> tabPage}}
+			<div class="row">
+				<div class="col-md-1 vertime"><h1>2 <br/> 0 <br/> 0 <br /> 1 </h1></div>
+				<div class="col-md-10"><img src="/packages/dash/lib/timer.png" /></div>
+				<div class="col-md-1 vertime"><h1>2 <br/> 0 <br/> 0 <br /> 3 </h1></div>
 			</div>
 		</div>
-
-		<div class="row">
-		  <div class="col-md-1 vertime"><h1>2 <br/> 0 <br/> 0 <br /> 1 </h1></div>
-		  <div class="col-md-10"><img src="/packages/dash/lib/timer.png" /></div>
-		  <div class="col-md-1 vertime"><h1>2 <br/> 0 <br/> 0 <br /> 3 </h1></div>
-		</div>
-	</template>
-
-	<template name="map">
-	  <div class="map">
-	    {{#constant}}
-	      <svg width="300" height="300">
-	        <circle class="callout" cx=-100 cy=-100></circle>
-	        <g class="circles"></g>
-	        <g class="labels"></g>
-	      </svg>
-	    {{/constant}}
-	    <div>
-	      <small class="attribution muted">&copy;
-	        <a href="http://www.openstreetmap.org/?lat=37.78212&lon=-122.40146&zoom=15&layers=M"
-	           target="_blank">OpenStreetMap</a> contributors</small>
-	    </div>
-	  </div>
 	</div>
-</div>
 </template>
