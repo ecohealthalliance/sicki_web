@@ -1,0 +1,34 @@
+<template name="adminPage">
+  <div class="container">
+
+  	<h1> Sicki Admin Page </h1>
+
+	<ul>
+
+		<li class="{{activeRouteClass 'newEntries'}}">
+          <a href="{{pathFor 'newEntries'}}"><strong>Entries</strong></a>: view all data that have been entered 
+        </li>
+
+        <!--{{#if currentUser}}-->
+          <li class="{{activeRouteClass 'entrySubmit'}}">
+            <a href="{{pathFor 'entrySubmit'}}"><strong>Submit Entry</strong></a>: enter data into the data entry form
+          </li>
+        <!--{{/if}}-->
+        
+        <li class="{{activeRouteClass 'newQuestions'}}">
+          <a href="{{pathFor 'newQuestions'}}"><strong>Questions</strong></a>: view list of questions for the data entry form
+        </li>
+
+        <!--{{#if currentUser}}-->
+          <li class="{{activeRouteClass 'questionSubmit'}}">
+            <a href="{{pathFor 'questionSubmit'}}"><strong>Submit Questions</strong></a>: add a new question to the data entry form
+          </li>
+        <!--{{/if}}-->
+
+		<li><strong>Notifications</strong>:let you know if someone has commented on an entry or question you've entered</li> 
+
+	</ul>
+
+  </div>
+</template>
+
