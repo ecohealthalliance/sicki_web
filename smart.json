@@ -9,6 +9,9 @@
     "dash": {
       "path": "packages/dash"
     },
-    "jquery-ui-bootstrap": {}
+    "jquery-ui-bootstrap": {},
+    "datamate": {
+      "path": "packages/datamate"
+    }
   }
 }
