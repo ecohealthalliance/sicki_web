@@ -12,6 +12,10 @@
     "jquery-ui-bootstrap": {},
     "datamate": {
       "path": "packages/datamate"
-    }
+    },
+    "errors": {
+      "path": "packages/errors"
+    },
+    "spin": {}
   }
 }
