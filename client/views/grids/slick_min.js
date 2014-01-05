@@ -35,7 +35,7 @@ var data = [
 
 var cols = [
     { id: "eventName", name: "eventName", field: "eventName" },
-    { id: "location", name: "location", field: "location" }
+    { id: "disease", name: "disease", field: "disease" }
 ];
     
 var options = {
