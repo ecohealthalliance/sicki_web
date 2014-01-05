@@ -7,15 +7,15 @@ var data = Entries.find().fetch();
 /*
 var data = [
   {
-    outbreak: 'Spanish Flu',
+    eventName: 'Spanish Flu',
     location: 'Global'
   }, 
   {
-    outbreak: 'Nipah Outbreak',
+    eventName: 'Nipah Outbreak',
     location: 'Malaysia'
   }, 
   {
-    outbreak: 'E Coli',
+    eventName: 'E Coli',
     location: 'Canada'
   }
 ];
@@ -34,7 +34,7 @@ var data = [
 */
 
 var cols = [
-    { id: "outbreak", name: "outbreak", field: "outbreak" },
+    { id: "eventName", name: "eventName", field: "eventName" },
     { id: "location", name: "location", field: "location" }
 ];
     

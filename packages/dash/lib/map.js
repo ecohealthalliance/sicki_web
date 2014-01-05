@@ -5,7 +5,7 @@ Template.map.rendered = function () {
   if (! self.handle) {
     self.handle = Deps.autorun(function () {
       var radius = function (party) {
-        return 10 + Math.sqrt(party.deaths) * 10;
+        return 10 + Math.sqrt(party.numberOfDeaths) * 10;
       };
 
       // Draw a circle for each party
