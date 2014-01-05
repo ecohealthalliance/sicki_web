@@ -145,7 +145,7 @@ if (Questions.find().count() === 0) {
     questionNumber: 0,
     questionTitle: 'eidID',
     question: 'EID Identification (eidID) number',
-    questionHelper: 'Unique number for EID event',
+    questionHelper: 'unique number for EID event',
     questionType: 'number',
     userId: nico._id,
     author: nico.profile.name,
@@ -153,12 +153,11 @@ if (Questions.find().count() === 0) {
     commentsCount: 0
   });
 
-
   Questions.insert({
     questionNumber: 1,
     questionTitle: 'eventName',
-    question: 'Unique name for EID event',
-    questionHelper: 'Give the event a unique name',
+    question: 'event name',
+    questionHelper: 'events are always referred to by Pathogen (Location, year) ex. Brachiola vesicularum (Czech Republic, 1998)',
     questionType: 'text',
     userId: nico._id,
     author: nico.profile.name,
@@ -169,8 +168,8 @@ if (Questions.find().count() === 0) {
   Questions.insert({
     questionNumber: 2,
     questionTitle: 'pathogens',
-    question: 'Pathogen names',
-    questionHelper: 'Names of pathogens implicated',
+    question: 'pathogen names',
+    questionHelper: 'names of pathogens implicated',
     questionType: 'dropdown',
     questionDrop: '{"pathA":"Pathogen A", "pathB":"PathogenB"}',
     userId: nico._id,
@@ -182,8 +181,8 @@ if (Questions.find().count() === 0) {
   Questions.insert({
     questionNumber: 3,
     questionTitle: 'location',
-    question: 'Location',
-    questionHelper: 'Location for EID event',
+    question: 'location',
+    questionHelper: 'location for EID event',
     questionType: 'text',
     userId: nico._id,
     author: nico.profile.name,
@@ -195,8 +194,8 @@ if (Questions.find().count() === 0) {
   Questions.insert({
     questionNumber: 4,
     questionTitle: 'host',
-    question: 'Host for diease',
-    questionHelper: 'Hosts implicated in the event',
+    question: 'host for diease',
+    questionHelper: 'hosts implicated in the event',
     questionType: 'text',
     userId: nico._id,
     author: nico.profile.name,
@@ -207,8 +206,8 @@ if (Questions.find().count() === 0) {
   Questions.insert({
     questionNumber: 5,
     questionTitle: 'disease',
-    question: 'Name of disease',
-    questionHelper: 'Name of disease',
+    question: 'disease',
+    questionHelper: 'as it is referred to in the literature about the event, not necessarily what it is referred to now',
     questionType: 'dropdown',
     questionDrop: '{"diseaseA":"Disease A", "diseaseB":"Disease B"}',
     userId: nico._id,
@@ -220,8 +219,8 @@ if (Questions.find().count() === 0) {
   Questions.insert({
     questionNumber: 6,
     questionTitle: 'startDate',
-    question: 'Event start sate',
-    questionHelper: 'When did event start',
+    question: 'start date',
+    questionHelper: 'when did event start',
     questionType: 'text',
     userId: nico._id,
     author: nico.profile.name,
@@ -232,8 +231,8 @@ if (Questions.find().count() === 0) {
   Questions.insert({
     questionNumber: 8,
     questionTitle: 'startDateISO',
-    question: 'Start Date ISO',
-    questionHelper: 'Date in ISO format yyyymmdd',
+    question: 'start Date ISO',
+    questionHelper: 'event start date in ISO format yyyymmdd (as much of this info as is available)',
     questionType: 'number',
     userId: nico._id,
     author: nico.profile.name,
@@ -244,8 +243,8 @@ if (Questions.find().count() === 0) {
   Questions.insert({
     questionNumber: 9,
     questionTitle: 'endDate',
-    question: 'End date for event',
-    questionHelper: 'Date event ended',
+    question: 'end date for event',
+    questionHelper: 'date event ended',
     questionType: 'text',
     userId: nico._id,
     author: nico.profile.name,
@@ -256,7 +255,7 @@ if (Questions.find().count() === 0) {
   Questions.insert({
     questionNumber: 10,
     questionTitle: 'endDateISO',
-    question: 'Date event ended in ISO format',
+    question: 'event end date in ISO format yyyymmdd (as much of this info as is available)',
     questionType: 'number',
     userId: nico._id,
     author: nico.profile.name,
@@ -267,8 +266,8 @@ if (Questions.find().count() === 0) {
   Questions.insert({
     questionNumber: 11,
     questionTitle: 'hostAge',
-    question: 'Age of host',
-    questionHelper: 'Age of host',
+    question: 'host age',
+    questionHelper: 'age of host',
     questionType: 'number',
     userId: nico._id,
     author: nico.profile.name,
@@ -276,11 +275,428 @@ if (Questions.find().count() === 0) {
     commentsCount: 0
   });
 
-    Questions.insert({
+  Questions.insert({
     questionNumber: 12,
     questionTitle: 'hostUse',
-    question: 'Use of host',
-    questionHelper: 'Host use',
+    question: 'host use',
+    questionHelper: 'how did the human come in contact with the intermediate host?',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 13,
+    questionTitle: 'transitionModel',
+    question: 'transition model',
+    questionHelper: 'how is the pathogen transmitted to humans?',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 14,
+    questionTitle: 'zoonoticType',
+    question: 'zoonotic type',
+    questionHelper: 'what is the origin of the animal involved?',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+    
+  Questions.insert({
+    questionNumber: 15,
+    questionTitle: 'numberInfected',
+    question: 'number infected',
+    questionHelper: 'How many infected?',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 16,
+    questionTitle: 'prevalence',
+    question: 'prevalence',
+    questionHelper: 'only report if given, do not look up population data',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 17,
+    questionTitle: 'duration',
+    question: 'duration',
+    questionHelper: 'how long did this specific event last?',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 18,
+    questionTitle: 'symptomsReported',
+    question: 'symptoms reported',
+    questionHelper: 'use direct language and include frequency of symptom among patients if its reported (e.g. fever (100%), malaise (85%)...)',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 19,
+    questionTitle: 'hostSex',
+    question: 'host sex',
+    questionHelper: 'Sex of host',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 19,
+    questionTitle: 'sampleType',
+    question: 'sample type',
+    questionHelper: 'Type of sample',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+   
+  Questions.insert({
+    questionNumber: 20,
+    questionTitle: 'driver',
+    question: 'driver',
+    questionHelper: 'what caused this emergence event? fill in from drop down menu, but include direct language',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+   
+  Questions.insert({
+    questionNumber: 21,
+    questionTitle: 'eidCategory',
+    question: 'EID category',
+    questionHelper: 'why is this considered an EID?',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 22,
+    questionTitle: 'domesticationStatus',
+    question: 'domestication status',
+    questionHelper: 'domestication status of non-human host',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+    
+  Questions.insert({
+    questionNumber: 23,
+    questionTitle: 'numberOfDeaths',
+    question: 'number of deaths',
+    questionHelper: 'number of deaths',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 24,
+    questionTitle: 'contact',
+    question: 'contact',
+    questionHelper: 'any contact info for individuals involved in event or experts in the particular field',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 25,
+    questionTitle: 'notes',
+    question: 'notes',
+    questionHelper: 'any other info you feel relevant to include that doesn’t fit into a category (show discretion- most of the things we are interested in have a category)',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 26,
+    questionTitle: 'pathogenDrugResistance',
+    question: 'pathogen drug resistance',
+    questionHelper: 'use the 1\=yes, 0\=no system. If one, include what it is resistant to',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 26,
+    questionTitle: 'pathogenReportedName',
+    question: 'pathogen reported name',
+    questionHelper: 'how is the pathogen reported in initial literature \- often this is different from current taxonomic classifications or the pathogen is unknown at time of event (e.g. \"a novel Rickettsia species\") ',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+/* pathogen tab */
+
+  Questions.insert({
+    questionNumber: 27,
+    questionTitle: 'taxonomy',
+    question: 'group of taxonomy questions',
+    questionHelper: 'pathogenClass, pathogenFamily, pathogenFamily, pathogenSpecies, pathogenAuthority, pathogenTaxOrder, pathogenGenus, pathogenSubSpecies, pathogen_class etc. (NCBI Taxonomy Browser is a useful resource for this and also gives \"pathogen authority\" (who named the pathogen and when)',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+/* host tab */
+
+  Questions.insert({
+    questionNumber: 28,
+    questionTitle: 'host',
+    question: 'group of host questions',
+    questionHelper: 'hostReportedName, hostClass, hostFamily, hostSpecies, hostAuthority, hostTaxOrder, hostGenus, hostSubSpecies, all host taxonomy, self explanatory. NCBI Taxonomy Browser useful',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+/* Taxonomy tab */
+
+  Questions.insert({
+    questionNumber: 27,
+    questionTitle: 'taxonomy',
+    question: 'group of taxonomy questions',
+    questionHelper: 'pathogenClass, pathogenFamily, pathogenFamily, pathogenSpecies, pathogenAuthority, pathogenTaxOrder, pathogenGenus, pathogenSubSpecies, pathogen_class etc. (NCBI Taxonomy Browser is a useful resource for this and also gives \"pathogen authority\" (who named the pathogen and when)',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+  
+  /* Location tab */
+
+  Questions.insert({
+    questionNumber: 28,
+    questionTitle: 'locationLocationName',
+    question: 'location name',
+    questionHelper: 'what is the reported location name',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 29,
+    questionTitle: 'locationPlaceName',
+    question: 'location place name',
+    questionHelper: 'can be more specific such as name as hospital or name of village. any direct language used in report to describe location',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 30,
+    questionTitle: 'locationLatitude',
+    question: 'latitude',
+    questionHelper: 'can be more specific such as name as hospital or name of village. any direct language used in report to describe location',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 31,
+    questionTitle: 'locationLongitude',
+    question: 'longitude',
+    questionHelper: 'only use if reported in literature, do not look it up',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+    
+  Questions.insert({
+    questionNumber: 32,
+    questionTitle: 'locationCity',
+    question: 'locationCity',
+    questionHelper: 'only use if reported in literature, do not look it up',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 33,
+    questionTitle: 'locationSubnationalRegion',
+    question: 'location subnational region',
+    questionHelper: 'e.g. Southern France or Wisconsin',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 34,
+    questionTitle: 'locationNation',
+    question: 'location nation',
+    questionHelper: 'can use background knowledge, doesn’t need to be directly reported',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 35,
+    questionTitle: 'locationContinent',
+    question: 'location continent',
+    questionHelper: 'can use background knowledge, doesn’t need to be directly reported',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+/* Economics Tab */
+  Questions.insert({
+    questionNumber: 36,
+    questionTitle: 'avgAgeOfInfected',
+    question: 'average age of infected',
+    questionHelper: 'only use if reported in literature, do not look it up',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+ 
+  Questions.insert({
+    questionNumber: 37,
+    questionTitle: 'avgAgeDeath',
+    question: 'average age of death',
+    questionHelper: '',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 38,
+    questionTitle: 'tradeTravelRestrictions',
+    question: ' trade and travel restrictions',
+    questionHelper: 'was there any restriction of people or goods as a result of this disease event? (does not include quarantine of patients)',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+ 
+  Questions.insert({
+    questionNumber: 39,
+    questionTitle: 'numHospitalizedInEvent',
+    question: '# hospitalized',
+    questionHelper: 'num hosp',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 40,
+    questionTitle: 'avgCosPerTreatmentInEvent',
+    question: 'avg. cost of treatment',
+    questionHelper: 'again, only if reported, do not try to figure out',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 41,
+    questionTitle: 'perCapitaNationalGDPInYearOfEvent',
+    question: 'per capita GDP in place and year of event. ',
+    questionHelper: 'data.worldbank.org useful',
+    questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 42,
+    questionTitle: 'avgLifeExpectancyInCountryAndYearOfEvent',
+    question: 'avg. life expectancy   in place and year of event',
+    questionHelper: 'again world bank useful',
     questionType: 'text',
     userId: nico._id,
     author: nico.profile.name,
@@ -288,3 +704,4 @@ if (Questions.find().count() === 0) {
     commentsCount: 0
   });
 }
+
