@@ -252,7 +252,7 @@ if (Questions.find().count() === 0) {
   Questions.insert({
     questionNumber: 4,
     questionTitle: 'host',
-    question: 'host for diease',
+    question: 'host for disease',
     questionHelper: 'hosts implicated in the event',
     questionType: 'text',
     userId: nico._id,
@@ -313,7 +313,8 @@ if (Questions.find().count() === 0) {
   Questions.insert({
     questionNumber: 10,
     questionTitle: 'endDateISO',
-    question: 'event end date in ISO format yyyymmdd (as much of this info as is available)',
+    question: 'event end date',
+    questionHelper: 'ISO format yyyymmdd (as much of this info as is available)',
     questionType: 'number',
     userId: nico._id,
     author: nico.profile.name,
@@ -717,7 +718,7 @@ if (Questions.find().count() === 0) {
   Questions.insert({
     questionNumber: 39,
     questionTitle: 'numHospitalizedInEvent',
-    question: '# hospitalized',
+    question: 'number hospitalized',
     questionHelper: 'num hosp',
     questionType: 'text',
     userId: nico._id,
