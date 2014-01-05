@@ -71,7 +71,7 @@ if (Entries.find().count() === 0) {
     body: 'Nico: we will need to follow-up with the primary research'
   });
 
-  Entries.insert({
+  var eidOneId = Entries.insert({
     qid: 456,
     district: 'solola',
     village: 'jucanya',
@@ -87,11 +87,27 @@ if (Entries.find().count() === 0) {
     title: 'party on',
     deaths: 1,
     abstract: 'A 24-year old male charcoal burner acquired Oropouche fever on September 25, 1955 in the Melajo Forest outside of Sangre Grande, Trinidad.  Initial attempts at determining host and vector species for this pathogen did not provide definitive answers but suggested that it was a vector-borne (mosquito) pathogen present in various primate hosts.  The patient presented with nonspecific symptoms of fever, backache, and cough that lasted only three days and resolved on their own.  Recent governmental deforestation programs allowed charcoal burners to reside near their work site in open huts for long periods of time, increasing exposure probability.  This event marks the evolution of an existing organism that was determined to be a novel species, Oropouche virus (46)',
-    userId: zach._id,
-    author: zach.profile.name,
+    userId: carla._id,
+    author: carla.profile.name,
     submitted: now - 10 * 3600 * 1000,
     commentsCount: 0,
     upvoters: [], votes: 0
+  });
+
+  Comments.insert({
+    entryId: eidOneId,
+    userId: kris._id,
+    author: kris.profile.name,
+    submitted: now - 3 * 3600 * 1000,
+    body: 'Nico: does this differ from the Hotspots statistic?'
+  });
+
+  Comments.insert({
+    entryId: eidOneId,
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 5 * 3600 * 1000,
+    body: 'Kris: yes, we will need more follow-up'
   });
 
   Entries.insert({
@@ -110,8 +126,8 @@ if (Entries.find().count() === 0) {
     title: "party on",
     deaths: 2,
     abstract: "In 1978, a 43 year old male living in Portugal died of complications from numerous opportunistic infections. Reportedly, the patient presented with, \" (a) history of intermittent fever for 4 years and diarrhea, weight loss, and abdominal pain for 2 years ... was grossly wasted ... had an enlarged liver ... and had fluctuating hepatitis with episodes of fever, hepatosplenomegaly, lymphadenopathy and jaundice\" (104).  In 1987, HIV-2 was identified in serum samples taken from the patient during his hospitalization in 1978, making this the earliest confirmed case of HIV-2 infection. The patient had lived in Guinea-Bissau, a former Portuguese colony, from 1956 to 1966, a country identified with widespread emergence of HIV-2 infection (376, 339). It is possible that destabilization of the region, because of the Guinea-Bissau war of independence (1963-1974), coupled with possible HIV-2 infection of the blood supply during that time period drove the emergence of HIV-2 (339). ",
-    userId: kris._id,
-    author: kris.profile.name,
+    userId: zach._id,
+    author: zach.profile.name,
     submitted: now - 12 * 3600 * 1000,
     commentsCount: 0,
     upvoters: [], votes: 0
