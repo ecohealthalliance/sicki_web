@@ -16,6 +16,7 @@
     "errors": {
       "path": "packages/errors"
     },
-    "spin": {}
+    "spin": {},
+    "accounts-ui-bootstrap-dropdown": {}
   }
 }
