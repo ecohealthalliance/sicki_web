@@ -32,7 +32,7 @@ Template.map.rendered = function () {
       // Label each with the current attendance count
       var updateLabels = function (group) {
         group.attr("id", function (party) { return party._id; })
-        .text(function (party) {return party.deaths || '';})
+        .text(function (party) {return party.numberOfDeaths || '';})
         .attr("x", function (party) { return party.x * 300; })
         .attr("y", function (party) { return party.y * 300 + radius(party)/2 })
         .style('font-size', function (party) {
