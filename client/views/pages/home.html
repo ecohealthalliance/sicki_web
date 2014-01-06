@@ -11,20 +11,21 @@
   <div class="container">
       <!-- Example row of columns -->
       <div class="row">
+
         <div class="col-md-4">
           <h2>EID Events</h2>
           <p>Collection of EID events from 1940 to present. Includes a summary, narrative, media collection, and up to 40 statistics on host, pathogen, location, time, and impact.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="{{pathFor 'makeEntryList'}}" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
           <h2>Disease Pages</h2>
           <p>Encyclopedic summary pages for the diseases behind the EID events. Includes collections of EID events, historic trends, media, symptoms, links, and diagnostics.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="{{pathFor 'diseasePage'}}" role="button">View details &raquo;</a></p>
        </div>
         <div class="col-md-4">
           <h2>Library</h2>
           <p>Collection of media for EID events. Includes primary scienitific literature, news reports, and social media. The collection includes metadata and can be connected to citation managers.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="{{pathFor 'libraryPage'}}" role="button">View details &raquo;</a></p>
         </div>
       </div>
     </div> <!-- /container -->

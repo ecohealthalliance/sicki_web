@@ -62,7 +62,9 @@
 
           <ul class="nav navbar-nav navbar-right">
             <li><p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">{{loginButtons}}</a></p></li>
+            {{#if currentUser}}
             <li><a href="#">{{> notifications}}</li>
+            {{/if}}
           </ul>
 
         </div><!-- /.navbar-collapse -->
