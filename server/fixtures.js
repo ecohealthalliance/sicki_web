@@ -97,7 +97,7 @@ if (Entries.find().count() === 0) {
       avgAgeDeath:'adult',
       tradeTravelRestrictions:5,
       numHospitalizedInEvent:15,
-      avgCosPerTreatmentInEvent:'',
+      avgCostPerTreatmentInEvent:'',
       perCapitaNationalGDPInYearOfEvent:'',
       avgLifeExpectancyInCountryAndYearOfEvent:61.5,
       },

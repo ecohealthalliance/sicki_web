@@ -3,19 +3,83 @@
 <div id="tabs">
   <ul>
     <li><a href="#tabs-1">Abstract</a></li>
-    <li><a href="#tabs-2">Statistics</a></li>
-    <li><a href="#tabs-3">References</a></li>
+    <li><a href="#tabs-2">Stats</a></li>
+    <li><a href="#tabs-3">Agent</a></li>
+    <li><a href="#tabs-4">Location</a></li>
+    <li><a href="#tabs-5">Host</a></li>
+    <li><a href="#tabs-6">Economics</a></li>
+    <li><a href="#tabs-7">Refs</a></li>
   </ul>
-  <div id="tabs-1">
+  
+  <div id="tabs-1"> <!-- abstract -->
     <p>{{abstract}} </p>
- 
   </div>
-  <div id="tabs-2">
-    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+
+  <div id="tabs-2"> <!-- stats -->
+    <p>Start Date: {{startDateISO}}</p>
+    <p>End Date: {{endDateISO}}</p>
+    <p>Host Age: {{hostAge}}</p>
+    <p>Host Use: {{hostUse}}</p>
+    <p>Transition Model: {{transitionModel}}</p>
+    <p>Zoonotic Type: {{zoonoticType}}</p>
+    <p>Number Infected: {{numberInfected}}</p>
+    <p>Prevalence: {{prevalence}}</p>
+    <p>Duration: {{duration}}</p>
+    <p>Symptoms Reported: {{symptomsReported}}</p>
+    <p>Host Sex: {{hostSex}}</p>
+    <p>Sample Type: {{sampleType}}</p>
+    <p>Driver: {{driver}}</p>
+    <p>EID Category: {{eidCategory}}</p>
+    <p>Domestication Status: {{domesticationStatus}}</p>
   </div>
-  <div id="tabs-3">
-    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+
+  <div id="tabs-3"> <!-- agent -->
+    <p>Drug Resistance: {{pathogens.pathogenDrugResistance}}</p>
+    <p>Reported Name: {{pathogens.pathogenReportedName}}</p>
+    <p>Class: {{pathogens.pathogenClass}}</p>
+    <p>Family: {{pathogens.pathogenFamily}}</p>
+    <p>Species: {{pathogens.pathogenSpecies}}</p>
+    <p>Authority: {{pathogens.pathogenAuthority}}</p>
+    <p>Taxonomic Order: {{pathogens.pathogenTaxOrder}}</p>
+    <p>Genus: {{pathogens.pathogenGenus}}</p>
+    <p>Sub Species: {{pathogens.pathogenSubSpecies}}</p>
   </div>
+
+  <div id="tabs-4"> <!-- location -->
+    <p>Location Name: {{location.locationLocationName}}</p>
+    <p>Place Name: {{location.locationPlaceName}}</p>
+    <p>Latitude: {{location.locationLatitude}}</p>
+    <p>Longitute: {{location.locationLongitude}}</p>
+    <p>City: {{location.locationCity}}</p>
+    <p>Subnational Region: {{location.locationSubnationalRegion}}</p>
+    <p>Nation: {{location.locationNation}}</p>
+    <p>Continent: {{location.locationContinent}}</p>
+  </div>
+
+  <div id="tabs-5"> <!-- host -->
+    <p>Reported Name: {{host.hostReportedName}}</p>
+    <p>Class: {{host.hostClass}}</p>
+    <p>Family: {{host.hostFamily}}</p>
+    <p>Species: {{host.hostSpecies}}</p>
+    <p>Authority: {{host.hostAuthority}}</p>
+    <p>Taxonomic Order: {{host.hostTaxOrder}}</p>
+    <p>Genus: {{host.hostGenus}}</p>
+    <p>Sub Species: {{host.hostSubSpecies}}</p>
+  </div>
+
+  <div id="tabs-6"> <!-- economics -->
+    <p>Age of Infected: {{economics.avgAgeOfInfected}}</p>
+    <p>Average Age of Death: {{economics.avgAgeDeath}}</p>
+    <p>Travel Restrictions: {{economics.tradeTravelRestrictions}}</p>
+    <p>Number Hospitalized: {{economics.numHospitalizedInEvent}}</p>
+    <p>Cost per Treatment: {{economics.avgCostPerTreatmentInEvent}}</p>
+    <p>per Capita GDP: {{economics.perCapitaNationalGDPInYearOfEvent}}</p>
+    <p>Average Life Expectancy: {{economics.avgLifeExpectancyInCountryAndYearOfEvent}}</p>
+  </div>
+
+  <div id="tabs-7"> <!-- refs -->
+    <p>{{abstract}} </p>
+  </div>
+
 </div>
 </template>
