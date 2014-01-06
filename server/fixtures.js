@@ -287,7 +287,7 @@ if (Questions.find().count() === 0) {
   });
 
   Questions.insert({
-    questionNumber: 8,
+    questionNumber: 7,
     questionTitle: 'startDateISO',
     question: 'start Date ISO',
     questionHelper: 'event start date in ISO format yyyymmdd (as much of this info as is available)',
@@ -299,7 +299,7 @@ if (Questions.find().count() === 0) {
   });
 
   Questions.insert({
-    questionNumber: 9,
+    questionNumber: 8,
     questionTitle: 'endDate',
     question: 'end date for event',
     questionHelper: 'date event ended',
@@ -311,7 +311,7 @@ if (Questions.find().count() === 0) {
   });
 
   Questions.insert({
-    questionNumber: 10,
+    questionNumber: 9,
     questionTitle: 'endDateISO',
     question: 'event end date',
     questionHelper: 'ISO format yyyymmdd (as much of this info as is available)',
@@ -323,7 +323,7 @@ if (Questions.find().count() === 0) {
   });
 
   Questions.insert({
-    questionNumber: 11,
+    questionNumber: 10,
     questionTitle: 'hostAge',
     question: 'host age',
     questionHelper: 'age of host',
@@ -335,7 +335,7 @@ if (Questions.find().count() === 0) {
   });
 
   Questions.insert({
-    questionNumber: 12,
+    questionNumber: 11,
     questionTitle: 'hostUse',
     question: 'host use',
     questionHelper: 'how did the human come in contact with the intermediate host?',
@@ -347,7 +347,7 @@ if (Questions.find().count() === 0) {
   });
 
   Questions.insert({
-    questionNumber: 13,
+    questionNumber: 12,
     questionTitle: 'transitionModel',
     question: 'transition model',
     questionHelper: 'how is the pathogen transmitted to humans?',
@@ -359,7 +359,7 @@ if (Questions.find().count() === 0) {
   });
 
   Questions.insert({
-    questionNumber: 14,
+    questionNumber: 13,
     questionTitle: 'zoonoticType',
     question: 'zoonotic type',
     questionHelper: 'what is the origin of the animal involved?',
@@ -371,7 +371,7 @@ if (Questions.find().count() === 0) {
   });
     
   Questions.insert({
-    questionNumber: 15,
+    questionNumber: 14,
     questionTitle: 'numberInfected',
     question: 'number infected',
     questionHelper: 'How many infected?',
@@ -383,7 +383,7 @@ if (Questions.find().count() === 0) {
   });
 
   Questions.insert({
-    questionNumber: 16,
+    questionNumber: 15,
     questionTitle: 'prevalence',
     question: 'prevalence',
     questionHelper: 'only report if given, do not look up population data',
@@ -395,7 +395,7 @@ if (Questions.find().count() === 0) {
   });
 
   Questions.insert({
-    questionNumber: 17,
+    questionNumber: 16,
     questionTitle: 'duration',
     question: 'duration',
     questionHelper: 'how long did this specific event last?',
@@ -407,7 +407,7 @@ if (Questions.find().count() === 0) {
   });
 
   Questions.insert({
-    questionNumber: 18,
+    questionNumber: 17,
     questionTitle: 'symptomsReported',
     question: 'symptoms reported',
     questionHelper: 'use direct language and include frequency of symptom among patients if its reported (e.g. fever (100%), malaise (85%)...)',
@@ -419,7 +419,7 @@ if (Questions.find().count() === 0) {
   });
 
   Questions.insert({
-    questionNumber: 19,
+    questionNumber: 18,
     questionTitle: 'hostSex',
     question: 'host sex',
     questionHelper: 'Sex of host',
@@ -527,7 +527,7 @@ if (Questions.find().count() === 0) {
   });
 
   Questions.insert({
-    questionNumber: 26,
+    questionNumber: 27,
     questionTitle: 'pathogenReportedName',
     question: 'pathogen reported name',
     questionHelper: 'how is the pathogen reported in initial literature \- often this is different from current taxonomic classifications or the pathogen is unknown at time of event (e.g. \"a novel Rickettsia species\") ',
@@ -541,7 +541,7 @@ if (Questions.find().count() === 0) {
 /* pathogen tab */
 
   Questions.insert({
-    questionNumber: 27,
+    questionNumber: 28,
     questionTitle: 'taxonomy',
     question: 'group of taxonomy questions',
     questionHelper: 'pathogenClass, pathogenFamily, pathogenFamily, pathogenSpecies, pathogenAuthority, pathogenTaxOrder, pathogenGenus, pathogenSubSpecies, pathogen_class etc. (NCBI Taxonomy Browser is a useful resource for this and also gives \"pathogen authority\" (who named the pathogen and when)',
@@ -555,7 +555,7 @@ if (Questions.find().count() === 0) {
 /* host tab */
 
   Questions.insert({
-    questionNumber: 28,
+    questionNumber: 29,
     questionTitle: 'host',
     question: 'group of host questions',
     questionHelper: 'hostReportedName, hostClass, hostFamily, hostSpecies, hostAuthority, hostTaxOrder, hostGenus, hostSubSpecies, all host taxonomy, self explanatory. NCBI Taxonomy Browser useful',
@@ -569,7 +569,7 @@ if (Questions.find().count() === 0) {
 /* Taxonomy tab */
 
   Questions.insert({
-    questionNumber: 27,
+    questionNumber: 30,
     questionTitle: 'taxonomy',
     question: 'group of taxonomy questions',
     questionHelper: 'pathogenClass, pathogenFamily, pathogenFamily, pathogenSpecies, pathogenAuthority, pathogenTaxOrder, pathogenGenus, pathogenSubSpecies, pathogen_class etc. (NCBI Taxonomy Browser is a useful resource for this and also gives \"pathogen authority\" (who named the pathogen and when)',
@@ -583,7 +583,7 @@ if (Questions.find().count() === 0) {
   /* Location tab */
 
   Questions.insert({
-    questionNumber: 28,
+    questionNumber: 31,
     questionTitle: 'locationLocationName',
     question: 'location name',
     questionHelper: 'what is the reported location name',
@@ -595,7 +595,7 @@ if (Questions.find().count() === 0) {
   });
 
   Questions.insert({
-    questionNumber: 29,
+    questionNumber: 32,
     questionTitle: 'locationPlaceName',
     question: 'location place name',
     questionHelper: 'can be more specific such as name as hospital or name of village. any direct language used in report to describe location',
@@ -607,7 +607,7 @@ if (Questions.find().count() === 0) {
   });
 
   Questions.insert({
-    questionNumber: 30,
+    questionNumber: 33,
     questionTitle: 'locationLatitude',
     question: 'latitude',
     questionHelper: 'can be more specific such as name as hospital or name of village. any direct language used in report to describe location',
@@ -619,7 +619,7 @@ if (Questions.find().count() === 0) {
   });
 
   Questions.insert({
-    questionNumber: 31,
+    questionNumber: 34,
     questionTitle: 'locationLongitude',
     question: 'longitude',
     questionHelper: 'only use if reported in literature, do not look it up',
@@ -631,7 +631,7 @@ if (Questions.find().count() === 0) {
   });
     
   Questions.insert({
-    questionNumber: 32,
+    questionNumber: 35,
     questionTitle: 'locationCity',
     question: 'locationCity',
     questionHelper: 'only use if reported in literature, do not look it up',
@@ -643,7 +643,7 @@ if (Questions.find().count() === 0) {
   });
 
   Questions.insert({
-    questionNumber: 33,
+    questionNumber: 36,
     questionTitle: 'locationSubnationalRegion',
     question: 'location subnational region',
     questionHelper: 'e.g. Southern France or Wisconsin',
@@ -655,7 +655,7 @@ if (Questions.find().count() === 0) {
   });
 
   Questions.insert({
-    questionNumber: 34,
+    questionNumber: 37,
     questionTitle: 'locationNation',
     question: 'location nation',
     questionHelper: 'can use background knowledge, doesn’t need to be directly reported',
@@ -667,7 +667,7 @@ if (Questions.find().count() === 0) {
   });
 
   Questions.insert({
-    questionNumber: 35,
+    questionNumber: 38,
     questionTitle: 'locationContinent',
     question: 'location continent',
     questionHelper: 'can use background knowledge, doesn’t need to be directly reported',
@@ -680,7 +680,7 @@ if (Questions.find().count() === 0) {
 
 /* Economics Tab */
   Questions.insert({
-    questionNumber: 36,
+    questionNumber: 39,
     questionTitle: 'avgAgeOfInfected',
     question: 'average age of infected',
     questionHelper: 'only use if reported in literature, do not look it up',
@@ -692,7 +692,7 @@ if (Questions.find().count() === 0) {
   });
  
   Questions.insert({
-    questionNumber: 37,
+    questionNumber: 40,
     questionTitle: 'avgAgeDeath',
     question: 'average age of death',
     questionHelper: '',
@@ -704,7 +704,7 @@ if (Questions.find().count() === 0) {
   });
 
   Questions.insert({
-    questionNumber: 38,
+    questionNumber: 41,
     questionTitle: 'tradeTravelRestrictions',
     question: ' trade and travel restrictions',
     questionHelper: 'was there any restriction of people or goods as a result of this disease event? (does not include quarantine of patients)',
@@ -716,7 +716,7 @@ if (Questions.find().count() === 0) {
   });
  
   Questions.insert({
-    questionNumber: 39,
+    questionNumber: 42,
     questionTitle: 'numHospitalizedInEvent',
     question: 'number hospitalized',
     questionHelper: 'num hosp',
@@ -728,7 +728,7 @@ if (Questions.find().count() === 0) {
   });
 
   Questions.insert({
-    questionNumber: 40,
+    questionNumber: 43,
     questionTitle: 'avgCosPerTreatmentInEvent',
     question: 'avg. cost of treatment',
     questionHelper: 'again, only if reported, do not try to figure out',
@@ -740,7 +740,7 @@ if (Questions.find().count() === 0) {
   });
 
   Questions.insert({
-    questionNumber: 41,
+    questionNumber: 44,
     questionTitle: 'perCapitaNationalGDPInYearOfEvent',
     question: 'per capita GDP in place and year of event. ',
     questionHelper: 'data.worldbank.org useful',
@@ -752,11 +752,23 @@ if (Questions.find().count() === 0) {
   });
 
   Questions.insert({
-    questionNumber: 42,
+    questionNumber: 45,
     questionTitle: 'avgLifeExpectancyInCountryAndYearOfEvent',
-    question: 'avg. life expectancy   in place and year of event',
+    question: 'avg. life expectancy in place and year of event',
     questionHelper: 'again world bank useful',
     questionType: 'text',
+    userId: nico._id,
+    author: nico.profile.name,
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 0
+  });
+
+  Questions.insert({
+    questionNumber: 46,
+    questionTitle: 'abstract',
+    question: 'brief description of event',
+    questionHelper: 'Brief summary',
+    questionType: 'textarea',
     userId: nico._id,
     author: nico.profile.name,
     submitted: now - 7 * 3600 * 1000,
