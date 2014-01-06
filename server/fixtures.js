@@ -228,8 +228,7 @@ if (Questions.find().count() === 0) {
     questionTitle: 'pathogens',
     question: 'pathogen names',
     questionHelper: 'names of pathogens implicated',
-    questionType: 'dropdown',
-    questionDrop: '{"pathA":"Pathogen A", "pathB":"PathogenB"}',
+    questionType: 'text',
     userId: nico._id,
     author: nico.profile.name,
     submitted: now - 9 * 3600 * 1000,
@@ -266,8 +265,7 @@ if (Questions.find().count() === 0) {
     questionTitle: 'disease',
     question: 'disease',
     questionHelper: 'as it is referred to in the literature about the event, not necessarily what it is referred to now',
-    questionType: 'dropdown',
-    questionDrop: '{"diseaseA":"Disease A", "diseaseB":"Disease B"}',
+    questionType: 'text',
     userId: nico._id,
     author: nico.profile.name,
     submitted: now - 9 * 3600 * 1000,
@@ -327,7 +325,13 @@ if (Questions.find().count() === 0) {
     questionTitle: 'hostAge',
     question: 'host age',
     questionHelper: 'age of host',
-    questionType: 'number',
+    questionType: 'dropdown',
+    questionDrop: {
+      "adult":"Adult", 
+      "juvenile":"Juvenile",
+      "neonate":"Neonate",
+      "unknown":"Unknown"
+    },
     userId: nico._id,
     author: nico.profile.name,
     submitted: now - 7 * 3600 * 1000,
@@ -339,7 +343,14 @@ if (Questions.find().count() === 0) {
     questionTitle: 'hostUse',
     question: 'host use',
     questionHelper: 'how did the human come in contact with the intermediate host?',
-    questionType: 'text',
+    questionType: 'dropdown',
+    questionDrop: {
+      "hunted":"Hunted", 
+      "eaten":"Eaten", 
+      "trade":"Markets or Traded", 
+      "none":"None", 
+      "unknown":"Unknown"
+    },
     userId: nico._id,
     author: nico.profile.name,
     submitted: now - 7 * 3600 * 1000,
@@ -351,7 +362,14 @@ if (Questions.find().count() === 0) {
     questionTitle: 'transitionModel',
     question: 'transition model',
     questionHelper: 'how is the pathogen transmitted to humans?',
-    questionType: 'text',
+    questionType: 'dropdown',
+    questionDrop: {
+      "close":"Close",
+      "sexual":"Sexual",
+      "vertical":"Vertical",
+      "vector":"Vector",
+      "unknown":"Unknown"
+    },
     userId: nico._id,
     author: nico.profile.name,
     submitted: now - 7 * 3600 * 1000,
@@ -363,7 +381,13 @@ if (Questions.find().count() === 0) {
     questionTitle: 'zoonoticType',
     question: 'zoonotic type',
     questionHelper: 'what is the origin of the animal involved?',
-    questionType: 'text',
+    questionType: 'dropdown',
+    questionDrop: {
+      "zooWild":"Zoonotic from wildlife", 
+      "zooDomestic":"Zoonotic from domestic", 
+      "zooUnknown":"Zoonotic from unknown origin", 
+      "nonZoo":"Non-zoonotic"
+    },
     userId: nico._id,
     author: nico.profile.name,
     submitted: now - 7 * 3600 * 1000,
@@ -394,6 +418,7 @@ if (Questions.find().count() === 0) {
     commentsCount: 0
   });
 
+  /*TODO*/
   Questions.insert({
     questionNumber: 16,
     questionTitle: 'duration',
@@ -435,7 +460,13 @@ if (Questions.find().count() === 0) {
     questionTitle: 'sampleType',
     question: 'sample type',
     questionHelper: 'Type of sample',
-    questionType: 'text',
+    questionType: 'dropdown',
+    questionDrop: {
+      "serology":"Serology",
+      "directBlood":"Direct Blood",
+      "directFaecal":"Direct Faecal",
+      "directOther":"Direct Other"
+    },
     userId: nico._id,
     author: nico.profile.name,
     submitted: now - 7 * 3600 * 1000,
@@ -447,7 +478,21 @@ if (Questions.find().count() === 0) {
     questionTitle: 'driver',
     question: 'driver',
     questionHelper: 'what caused this emergence event? fill in from drop down menu, but include direct language',
-    questionType: 'text',
+    questionType: 'dropdown',
+    questionDrop: {
+      "humanSuscept":"Human susceptibility to infection",
+      "antimicrobial":"Antimicrobial agent use",
+      "agriculture":"Agricultural industry changes",
+      "travelCommerce":"International travel and commerce",
+      "warFamine":"War and famine",
+      "medicalIndustry":"Medical industry changes",
+      "climateWeather":"Climate and weather",
+      "demographics":"Human demographics and behaviour",
+      "publicHealthBreakdown":"Breakdown of public health measures",
+      "bushMeat":"Bush meat",
+      "otherIndustries":"Other industries",
+      "unspecified":"Unspecified"
+    },
     userId: nico._id,
     author: nico.profile.name,
     submitted: now - 7 * 3600 * 1000,
@@ -471,7 +516,13 @@ if (Questions.find().count() === 0) {
     questionTitle: 'domesticationStatus',
     question: 'domestication status',
     questionHelper: 'domestication status of non-human host',
-    questionType: 'text',
+    questionType: 'dropdown',
+    questionDrop: {
+      "wild":"Wild",
+      "domestic":"Domestic",
+      "periDomestic":"Peri-domestic",
+      "unknown":"Unknown"
+    },
     userId: nico._id,
     author: nico.profile.name,
     submitted: now - 7 * 3600 * 1000,
