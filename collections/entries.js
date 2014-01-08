@@ -17,21 +17,24 @@ Entries.deny({
 Meteor.methods({
   entry: function(entryAttributes) {
     var user = Meteor.user(),
-      entryWithSameQID = Entries.findOne({qid: entryAttributes.qid});
+      keyField = Datamate._options.keyField || 'qid';
+      query = {};
+      query[keyField] = entryAttributes[keyField];
+      entryWithSameKeyField = Entries.findOne(query);
 
     // ensure the user is logged in
     if (!user)
       throw new Meteor.Error(401, "You need to login to add new entries");
 
     // ensure the entry has a number
-    if (!entryAttributes.qid)
-      throw new Meteor.Error(422, 'Please fill in an event number');
+    if (!entryAttributes[keyField])
+      throw new Meteor.Error(422, 'Please fill in ' + keyField);
 
     // check that there are no previous entries with the same last name
-    if (entryAttributes.qid && entryWithSameQID) {
+    if (entryAttributes[keyField] && entryWithSameKeyField) {
       throw new Meteor.Error(302, 
-        'This event name has already been entered', 
-        entryWithSameQID._id);
+        'This ' + keyField + ' has already been entered', 
+        entryWithSameKeyField._id);
     }
 
     // pick out the whitelisted keys
