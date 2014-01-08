@@ -1,0 +1,1 @@
+References = new Meteor.Collection('references');

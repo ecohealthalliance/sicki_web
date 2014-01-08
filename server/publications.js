@@ -21,3 +21,7 @@ Meteor.publish('comments', function(entryId) {
 Meteor.publish('notifications', function() {
   return Notifications.find({userId: this.userId});
 });
+
+Meteor.publish('references', function(options) {
+  return References.find({}, options);
+});
