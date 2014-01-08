@@ -2,6 +2,10 @@ p {
     font-size:18px;
 }
 
+.navbar {
+    min-height: 5px;
+}
+
 .entry {
     *zoom: 1;
     -webkit-transition: all 300ms 0ms;

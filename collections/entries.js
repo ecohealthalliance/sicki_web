@@ -9,6 +9,7 @@ Entries.deny({
   update: function(userId, entry, fieldNames) {
     // may only edit the following three fields:
     var questionNames = Questions.find({},{questionTitle:1})
+    console.log(questionNames)
     return (_.without(fieldNames, _.values(questionNames)).length > 0);
   }
 });
