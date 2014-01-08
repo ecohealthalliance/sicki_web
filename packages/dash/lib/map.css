@@ -2,8 +2,8 @@
     position: relative;
     background-image: url('soma.png');
     background-position: -20px -20px;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
 }
 
 .map circle.public {
