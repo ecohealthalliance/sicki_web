@@ -60,6 +60,7 @@ if (Entries.find().count() === 0) {
       locationNation:'Libya',
       locationContinent:'Africa'
       },
+
     host:{
       hostReportedName:'camel',
       hostClass:'mammalia',
@@ -70,7 +71,10 @@ if (Entries.find().count() === 0) {
       hostGenus:'Camelus',
       hostSubSpecies:''
       },
-    disease: 'plague',
+    disease: [
+      {name:'plague', ref: [123,567, 789], expert: 'yes', upvotes: 20, downvotes:15},
+      {name:'black death', ref:456, upvotes:4}
+    ],
     startDate: '1976-02-26',
     startDateISO:'1976-02-26',
     endDate:'',
