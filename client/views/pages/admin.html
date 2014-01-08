@@ -6,22 +6,22 @@
 	<ul>
 
     		<li class="{{activeRouteClass 'newEntries'}}">
-          <a href="{{pathFor 'newEntries'}}"><strong>Entries</strong></a>: view all data that have been entered 
+          <a href="{{pathFor 'ascendingEntries'}}"><strong>Entries</strong></a>: view all data that have been entered 
         </li>
 
         <!--{{#if currentUser}}-->
           <li class="{{activeRouteClass 'entrySubmit'}}">
-            <a href="{{pathFor 'entrySubmit'}}"><strong>Submit Entry</strong></a>: enter data into the data entry form
+            <a href="{{pathFor 'entrySubmitNew'}}"><strong>Submit New Entry</strong></a>: enter data into the data entry form
           </li>
         <!--{{/if}}-->
         
         <li class="{{activeRouteClass 'newQuestions'}}">
-          <a href="{{pathFor 'newQuestions'}}"><strong>Questions</strong></a>: view list of questions for the data entry form
+          <a href="{{pathFor 'ascendingQuestions'}}"><strong>Questions</strong></a>: view list of questions for the data entry form
         </li>
 
         <!--{{#if currentUser}}-->
           <li class="{{activeRouteClass 'questionSubmit'}}">
-            <a href="{{pathFor 'questionSubmit'}}"><strong>Submit Questions</strong></a>: add a new question to the data entry form
+            <a href="{{pathFor 'questionSubmitNew'}}"><strong>Submit New Question</strong></a>: add a new question to the data entry form
           </li>
         <!--{{/if}}-->
 
