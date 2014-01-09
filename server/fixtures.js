@@ -34,9 +34,6 @@ if (Entries.find().count() === 0) {
   var kris = Meteor.users.findOne(krisId);
 
   var eidOneId = Entries.insert({
-    qid: 123,
-    district: 'solola',
-    village: 'jucanya',
     eidID: 1,
     eventName: 'Yersinia pestis (Al-Azzizat, Libya, 1976)',
     pathogens:{
@@ -71,10 +68,9 @@ if (Entries.find().count() === 0) {
       hostGenus:'Camelus',
       hostSubSpecies:''
       },
-    disease: [
-      {name:'plague', ref: [135,567, 789], expert: 'yes', upvotes: 20, downvotes:15},
-      {name:'black death', ref:456, upvotes:4}
-    ],
+    disease: 'plague',
+      /*{name:'plague', ref: [135,567, 789], expert: 'yes', upvotes: 20, downvotes:15},
+      {name:'black death', ref:456, upvotes:4}*/
     startDate: '1976-02-26',
     startDateISO:'1976-02-26',
     endDate:'',
@@ -134,11 +130,9 @@ if (Entries.find().count() === 0) {
   });
 
   var eidOneId = Entries.insert({
-    qid: 456,
-    district: 'solola',
-    village: 'jucanya',
     eidID: 2,
-    outbreak: 'Oropouche virus (Sangre Grande, Trinidad, 1955)',
+    eventName: 'Oropouche virus (Sangre Grande, Trinidad, 1955)',
+    disease: 'Oropouche virus',
     location: 'Sangre Grande, Trinidad',
     year: 1955,
     host: 'primate',
@@ -173,11 +167,9 @@ if (Entries.find().count() === 0) {
   });
 
   Entries.insert({
-    qid: 789,
-    district: 'solola',
-    village: 'jucanya',
     eidID: 3,
-    outbreak: 'Human Immunodeficiency Virus 2 (Guinea Bissau, 1960)',
+    eventName: 'Human Immunodeficiency Virus 2 (Guinea Bissau, 1960)',
+    disease: 'HIV-2',
     location: 'Guinea Bissau',
     year: 1960,
     host: 'primate',

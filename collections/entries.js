@@ -17,7 +17,7 @@ Entries.deny({
 Meteor.methods({
   entry: function(entryAttributes) {
     var user = Meteor.user(),
-      keyField = Datamate._options.keyField || 'qid';
+      keyField = Datamate._options.keyField || 'eidId';
       query = {};
       query[keyField] = entryAttributes[keyField];
       entryWithSameKeyField = Entries.findOne(query);

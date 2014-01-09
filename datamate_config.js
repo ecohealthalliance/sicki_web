@@ -1,4 +1,5 @@
 Datamate.config({
   keyField: 'eidID',
-  listFields: ['eidID', 'eventName','disease']
+  titleField: 'eventName',
+  subTitleField: 'disease'
 });
