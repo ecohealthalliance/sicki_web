@@ -16,9 +16,16 @@ Template.referencesList.helpers({
   },
   fields: function() {
     return [
-      { key: 'id', label: 'ID' },
-      { key: 'title', label: 'Title'},
-      { key: 'container-title', label: 'Journal'}
-      ]
+      {
+        key: 'id',
+        label: 'ID'
+      }, {
+        key: 'title',
+        label: 'Title'
+      }, {
+        key: 'container-title',
+        label: 'Journal'
+      }
+    ];
   }
 });
