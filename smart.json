@@ -18,5 +18,8 @@
     },
     "spin": {},
     "accounts-ui-bootstrap-dropdown": {}
+    "reactive-table": {
+      "path": "packages/reactive-table"
+    }
   }
 }
