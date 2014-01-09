@@ -12,7 +12,7 @@ Template.referencesList.helpers({
     return Router.current().limit() == this.references.fetch().length;
   },
   references: function() {
-    return References.find();
+    return References;
   },
   fields: function() {
     return [
