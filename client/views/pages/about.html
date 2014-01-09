@@ -1,13 +1,60 @@
 <template name="aboutPage">
+<div class="container">
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="eha_web.png" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary" href="http://ecohealthalliance.org" role="button">Visit EcoHealth Alliance</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="sicki_slide_2.png" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary" href="" role="button">View our Timeline</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="sicki_slide_3.png" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+             <p><a class="btn btn-lg btn-primary" href="{{pathFor 'ascendingReferences'}}" role="button">Read the History</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="sicki_slide_4.png" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+             <p><a class="btn btn-lg btn-primary" href="{{pathFor 'ascendingReferences'}}" role="button">See Contributors</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
 
 		      <!-- START THE FEATURETTES -->
-	<div class="container">
-
 
      <div class="row featurette">
         <div class="col-md-9">
           <h2 class="featurette-heading">Background, <span class="text-muted">Sicki @ EcoHealth Alliance</span></h2>
-          <p class="lead">The Sicki Project was conceived at EcoHealth Alliance to improve our understanding for Emerging Infectious Diseases (EIDs). </p>
+          <p class="lead">The Sicki Project was conceived at EcoHealth Alliance to improve our understanding of Emerging Infectious Diseases (EIDs). </p>
         </div>
         <div class="col-md-3">
 			<p></p>
@@ -59,6 +106,8 @@
       </div>
 
       <hr class="featurette-divider">
+
+
 
       <!-- /END THE FEATURETTES -->
 	</div> <!--end container-->
