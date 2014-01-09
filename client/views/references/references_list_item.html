@@ -1,0 +1,7 @@
+<template name="referencesListItem">
+  <div class="entry">
+    <div class="entry-content">
+      <h3><a href="{{pathFor 'pdfPage'}}"> {{id}} </a><span> {{author.[0].family}} {{issued.date-parts}} {{title}} {{container-title}} ({{volume}}) pp: {{page}}</span></h3>
+    </div>
+  </div>
+</template>
