@@ -13,6 +13,12 @@ Template.referencesList.helpers({
   },
   references: function() {
     return References.find();
+  },
+  fields: function() {
+    return [
+      { key: 'id', label: 'ID' },
+      { key: 'title', label: 'Title'},
+      { key: 'container-title', label: 'Journal'}
+      ]
   }
 });
-

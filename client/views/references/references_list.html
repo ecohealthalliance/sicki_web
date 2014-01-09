@@ -1,13 +1,17 @@
 <template name="referencesList">
   <div class="entries">
+
+{{reactiveTable referencesWithRank fields}}
+<!--
     {{#each referencesWithRank}}
       {{> referencesListItem}}
     {{/each}}
-
+-->
     <!--load more references-->
+<!--
     {{#if hasMoreReferences}}
       <a class="load-more" href="{{nextPath}}">Load more</a>
     {{/if}}
-
+-->
   </div>
 </template>

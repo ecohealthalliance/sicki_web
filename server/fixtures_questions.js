@@ -1,5 +1,6 @@
 
 if (Questions.find().count() === 0) {
+  var now = new Date().getTime();
 
   var nicoId = Meteor.users.insert({
     profile: { name: 'nicopresto' }
