@@ -9,7 +9,7 @@ createCommentNotification = function(comment) {
   if (comment.userId !== entry.userId) {
     Notifications.insert({
       userId: entry.userId,
-      eventId: entry._id,
+      entryId: entry._id,
       commentId: comment._id,
       commenterName: comment.author,
       read: false
