@@ -4,7 +4,7 @@ if (References.find().count() === 0) {
   References.insert({
     "id": 739,
     "type": "article-journal",
-    "title": "TEST Cases of cat-associated human plague in the Western US, 1977-1998",
+    "title": "Cases of cat-associated human plague in the Western US, 1977-1998",
     "container-title": "Clinical Infectious Diseases",
     "page": "893-900",
     "volume": "30",
