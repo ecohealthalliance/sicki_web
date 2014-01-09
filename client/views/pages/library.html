@@ -1,9 +1,47 @@
 <template name="libraryPage">
   <div class="container">
 
-	<h1> Library </h1>
-	<p> Stub ... Future home of disease library </p>
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="jones_shot.png" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary" href="{{pathFor 'ascendingReferences'}}" role="button">Browse collection</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="nytimes.png" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary" href="{{pathFor 'ascendingReferences'}}" role="button">Browse collection</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="global_infect.png" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+             <p><a class="btn btn-lg btn-primary" href="{{pathFor 'ascendingReferences'}}" role="button">Browse collection</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
 
-  </div>
-
+	
+		              <h1>Browse the library</h1>
+              <p>This is our collection of materials including scientific publications, books, news articles, and social media that we consulted to build this webopedia.</p>
+	</div>
  </template>
