@@ -68,9 +68,10 @@ if (Entries.find().count() === 0) {
       hostGenus:'Camelus',
       hostSubSpecies:''
       },
-    disease: 'plague',
-      /*{name:'plague', ref: [135,567, 789], automate: FALSE, expert: true, upvotes: 20, downvotes:15},
-      {name:'black death', ref:456, upvotes:4}*/
+    disease: [
+      {name:'plague', ref: [135,567, 789], automate: false, expert: true, upvotes: 20, downvotes:15},
+      {name:'black death', ref:456, upvotes:4, downvotes: 22}
+    ],
     startDate: '1976-02-26',
     startDateISO:'1976-02-26',
     endDate:'',
@@ -132,7 +133,10 @@ if (Entries.find().count() === 0) {
   var eidOneId = Entries.insert({
     eidID: 2,
     eventName: 'Oropouche virus (Sangre Grande, Trinidad, 1955)',
-    disease: 'Oropouche virus',
+    disease: [
+      {name:'Oropouche virus', ref: [135,567, 789], automate: false, expert: true, upvotes: 20, downvotes:15},
+      {name:'Orophouch', ref:456, upvotes:4}
+    ],
     location: 'Sangre Grande, Trinidad',
     year: 1955,
     host: 'primate',
@@ -169,7 +173,10 @@ if (Entries.find().count() === 0) {
   Entries.insert({
     eidID: 3,
     eventName: 'Human Immunodeficiency Virus 2 (Guinea Bissau, 1960)',
-    disease: 'HIV-2',
+    disease: [
+      {name:'HIV-2', ref: [789], automate: false, expert: true, upvotes: 20, downvotes:15},
+      {name:'Human Immunodeficiency V-2', ref:[777,456], upvotes:4}
+    ],
     location: 'Guinea Bissau',
     year: 1960,
     host: 'primate',

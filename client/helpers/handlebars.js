@@ -15,3 +15,17 @@ Handlebars.registerHelper('arrayify',function(obj){
     for (var key in obj) result.push({name:key,value:obj[key]});
     return result;
 });
+
+Handlebars.registerHelper('list', function(items, options) {
+  var out = "<ul>";
+  for(var i=0, l=items.length; i<l; i++) {
+    out = out + "<li>" + options.fn(items[i]) + "</li>";
+  }
+  return out + "</ul>";
+});
+
+Handlebars.registerHelper('expert', function(items, options) {
+  expertObj = _.filter(items, function(ex){ 
+    return ex.expert==true;});
+  return options.fn(expertObj[0]);
+});
