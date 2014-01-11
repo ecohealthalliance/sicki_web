@@ -17,7 +17,7 @@
       "path": "packages/errors"
     },
     "spin": {},
-    "accounts-ui-bootstrap-dropdown": {}
+    "accounts-ui-bootstrap-dropdown": {},
     "reactive-table": {
       "path": "packages/reactive-table"
     }
