@@ -33,683 +33,1110 @@ if (Entries.find().count() === 0) {
   });
   var kris = Meteor.users.findOne(krisId);
 
-var eidOneId = Entries.insert({
-  "eidID" : "1",
-  "author" : "Tilchin",
+var sickiOneId = Entries.insert({
   "characteristics" : {
     "numberInfected" : {
+      "ref" : "512",
       "value" : "45",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206634,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "512"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "symptomsReported" : {
+      "ref" : "512",
       "value" : "no symptoms- just confirmed isolate of bacteria",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206644,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "512"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "numberOfDeaths" : {
-      "value" : "35",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206646,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "512"
+      "ref" : "512",
+      "value" : "0",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "prevalence" : {
+      "ref" : "512",
       "value" : "in patients: 1993/01-1993/06= 1.26/1000, 1993/07-1993/12= 6.62/1,000, 1994/01-06= 8.15, 1993/07-12= 6.28. average staff prevalence= 11%",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206642,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "512"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     }
   },
-    "abstract" : {
-    "value" : "An outbreak of gentamicin resistant Acinetobacter baumannii infection occurred in 35 patients and ten staff at the intensive care unit of Sir Charles Gairdner Hospital in Perth, Australia.  In a retrospective study it was determined that incidence rose from 1.26 cases per 1000 in January to June of 1993, to 6.62 cases per 1000 for July to December, 1993.  The infection manifested differently among patients with the most common cases comprising of pneumonia, central venous catheter infection, and urinary tract infection.  This event was driven by human susceptibility to infection and antimicrobial agent use, and represents a new drug resistance and increase in incidence.",
-    "author" : "Tilchin",
-    "userId" : 1,
-    "submitted" : 1389508081.206413,
-    "rank" : {
-      "upvotes" : 0,
-      "downvotes" : 0,
-      "eha" : true
-    },
-    "ref" : "512"
-  },
-
-  "userId" : 1,
+  "refs" : [ ],
   "locations" : {
     "placeName" : {
+      "ref" : "512.0",
       "value" : "Intensive Care Unit of Sir Charles Gairdner Hospital",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206552,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "512.0"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "name" : {
+      "ref" : "512.0",
       "value" : "Nedlands",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206535,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "512.0"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "city" : {
+      "ref" : "512.0",
       "value" : "Nedlands",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206562,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "512.0"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "latitude" : {
+      "ref" : "",
       "value" : "",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206559,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : ""
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "subnationalRegion" : {
+      "ref" : "512.0",
       "value" : "Western Australia",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206565,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "512.0"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "continent" : {
+      "ref" : "512.0",
       "value" : "Australia",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206568,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "512.0"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "longitude" : {
+      "ref" : "",
       "value" : "",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206561,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : ""
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "nation" : {
+      "ref" : "512.0",
       "value" : "Australia",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206567,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "512.0"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     }
   },
-  "rank" : {
-    "eha" : true
-  },
-
   "eidCategory" : {
+    "ref" : "512",
     "value" : "increased incidence, new drug resistance",
-    "author" : "Tilchin",
-    "userId" : 1,
-    "submitted" : 1389508081.2064,
-    "rank" : {
-      "upvotes" : 0,
-      "downvotes" : 0,
-      "eha" : true
-    },
-    "ref" : "512"
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
+  },
+  "sickiID" : {
+    "ref" : "jones",
+    "value" : "1.0",
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
   },
   "contacts" : {
+    "firstName" : "",
+    "lastName" : "",
+    "userID" : "",
     "affiliation" : "",
     "blob" : {
       "ref" : "",
       "value" : ""
     },
-    "firstName" : "",
-    "author" : "Tilchin",
-    "submitted" : 1389508081.206649,
-    "lastName" : "",
-    "userID" : "",
     "email" : "",
-    "rank" : {
-      "upvotes" : 0,
-      "downvotes" : 0,
-      "eha" : true
-    },
-    "userId" : 1
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
   },
   "sampleType" : {
+    "ref" : "512",
     "value" : "There were five different primary initial sites of isolation of GRAB in the 45 cases: sputum or other respiratory tract specimen (including bronchial alveolar lavage) (35 cases=77%); wounds (five cases=11%); central venous catheter tips (three cases=6%); blood (one case=2%); and urine (one case=2%).",
-    "author" : "Tilchin",
-    "userId" : 1,
-    "submitted" : 1389508081.206432,
-    "rank" : {
-      "upvotes" : 0,
-      "downvotes" : 0,
-      "eha" : true
-    },
-    "ref" : "512"
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
   },
-  "eventName" : "Acinetobacter baumannii gentamycin-res (Australia, 1993)",
-  "upvotes" : 0,
-  "downvotes" : 0,
+  "eventName" : {
+    "ref" : "jones",
+    "value" : "Acinetobacter baumannii gentamycin-res (Australia, 1993)",
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
+  },
+  "metaData" : {
+    "reviewer" : "Tilchin",
+    "votes" : {
+      "down" : 0,
+      "up" : 0
+    },
+    "userId" : 0,
+    "submitted" : 1389563622.076794,
+    "rank" : {
+      "auto" : false,
+      "top" : true,
+      "expert" : false,
+      "eha" : true
+    }
+  },
+  "abstract" : {
+    "ref" : "512",
+    "value" : "An outbreak of gentamicin resistant Acinetobacter baumannii infection occurred in 35 patients and ten staff at the intensive care unit of Sir Charles Gairdner Hospital in Perth, Australia.  In a retrospective study it was determined that incidence rose from 1.26 cases per 1000 in January to June of 1993, to 6.62 cases per 1000 for July to December, 1993.  The infection manifested differently among patients with the most common cases comprising of pneumonia, central venous catheter infection, and urinary tract infection.  This event was driven by human susceptibility to infection and antimicrobial agent use, and represents a new drug resistance and increase in incidence.",
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
+  },
   "driver" : {
+    "ref" : "512, Jones et al.",
     "value" : "human susceptibility to infection, antimicrobial agent use",
-    "author" : "Tilchin",
-    "userId" : 1,
-    "submitted" : 1389508081.206434,
-    "rank" : {
-      "upvotes" : 0,
-      "downvotes" : 0,
-      "eha" : true
-    },
-    "ref" : "512, Jones et al."
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
   },
+  "refsCount" : 0,
   "transmissionModel" : {
+    "ref" : "512",
     "value" : "close: \"Carriage of GRAB on staff hands was demonstrated as the most likely source of infection.\"",
-    "author" : "Tilchin",
-    "userId" : 1,
-    "submitted" : 1389508081.206423,
-    "rank" : {
-      "upvotes" : 0,
-      "downvotes" : 0,
-      "eha" : true
-    },
-    "ref" : "512"
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
   },
   "pathogens" : {
     "genus" : {
+      "ref" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock",
       "value" : "Acinetobacter",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.20652,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "taxOrder" : {
+      "ref" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock",
       "value" : "Pseudomonadales",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206518,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "family" : {
+      "ref" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock",
       "value" : "Moraxellaceae",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206498,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "subSpecies" : {
+      "ref" : "",
       "value" : "",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206522,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : ""
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "drugResistance" : {
+      "ref" : "",
       "value" : "1.0",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206479,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : ""
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "reportedName" : {
+      "ref" : "",
       "value" : "",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206482,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : ""
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "class" : {
+      "ref" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock",
       "value" : "Gammaproteobacteria",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206495,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "authority" : {
+      "ref" : "",
       "value" : "",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206511,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : ""
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "species" : {
+      "ref" : "Jones et al.",
       "value" : "Acinetobacter baumannii multiple drug-res",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206508,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "Jones et al."
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     }
   },
   "dates" : {
     "duration" : {
+      "ref" : "512",
       "value" : "retrospective study 2 years, median ICU stay 16 days",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206631,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "512"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "startDate" : {
-      "submitted" : 1389508081.206627,
-      "author" : "Tilchin",
-      "userId" : 1,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
+      "ref" : "512",
       "formValue" : "1993-01-01",
       "value" : "1993-01-01",
-      "ref" : "512"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "endDate" : {
-      "submitted" : 1389508081.206629,
-      "author" : "Tilchin",
-      "userId" : 1,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
+      "ref" : "512",
       "formValue" : "1994-12-31",
       "value" : "1994-12-31",
-      "ref" : "512"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     }
   },
   "zoonoticType" : {
+    "ref" : "512",
     "value" : "non-zoonotic",
-    "author" : "Tilchin",
-    "userId" : 1,
-    "submitted" : 1389508081.20643,
-    "rank" : {
-      "upvotes" : 0,
-      "downvotes" : 0,
-      "eha" : true
-    },
-    "ref" : "512"
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
   },
   "notes" : {
+    "ref" : "",
     "value" : "",
-    "author" : "Tilchin",
-    "userId" : 1,
-    "submitted" : 1389508081.206421,
-    "rank" : {
-      "upvotes" : 0,
-      "downvotes" : 0,
-      "eha" : true
-    },
-    "ref" : ""
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
   },
   "economics" : {
     "avgLifeExpectEventCountryYear" : {
+      "ref" : "data.worldbank.org",
       "value" : "77.9",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206672,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "data.worldbank.org"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "avgAgeDeath" : {
+      "ref" : "512.0",
       "value" : "no death",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206653,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "512.0"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "perCapitaNatGDPEventYear" : {
+      "ref" : "data.worldbank.org",
       "value" : "17678.0",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.20667,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "data.worldbank.org"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "avgAgeInfected" : {
+      "ref" : "512.0",
       "value" : "51.0",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206651,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "512.0"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "tradeTravelRestrictions" : {
+      "ref" : "512.0",
       "value" : "0.0",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.20666,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "512.0"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "avgCostPerTreatment" : {
+      "ref" : "",
       "value" : "",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206663,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : ""
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "numHospitalized" : {
+      "ref" : "512.0",
       "value" : "45.0",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206661,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "512.0"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     }
   },
   "disease" : {
+    "ref" : "512",
     "value" : "\"Among 45 cases...27 cases met the CDC criteria for infection..pneumonia (74%), bacteremia (7%), CVC related infections (22%), empyema (4%), urinary tract infection (11%), and wound infection (4%)\"",
-    "author" : "Tilchin",
-    "userId" : 1,
-    "submitted" : 1389508081.206391,
-    "rank" : {
-      "upvotes" : 0,
-      "downvotes" : 0,
-      "eha" : true
-    },
-    "ref" : "512"
+    "formValue" : "\"Pneumonia (74%), bacteremia (7%), CVC related infections (22%), empyema (4%), urinary tract infection (11%), and wound infection (4%)\"",
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
   },
-  "submitted" : 1389508081.206722,
   "hosts" : {
     "hostUse" : {
+      "ref" : "512",
       "value" : "providing hospital care",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206583,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "512"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "family" : {
+      "ref" : "NIH",
       "value" : "Hominidae",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206599,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "NIH"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "authority" : {
+      "ref" : "",
       "value" : "",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206603,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : ""
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "sex" : {
+      "ref" : "",
       "value" : "",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206576,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : ""
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "reportedName" : {
+      "ref" : "512.0",
       "value" : "human",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.20659,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "512.0"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "class" : {
+      "ref" : "NIH",
       "value" : "mammalia",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206597,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "NIH"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "domesticationStatus" : {
+      "ref" : "",
       "value" : "",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206578,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : ""
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "species" : {
+      "ref" : "NIH",
       "value" : "Homo sapiens",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206601,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "NIH"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "age" : {
+      "ref" : "512",
       "value" : "average 51 yr",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206581,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "512"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "subSpecies" : {
+      "ref" : "",
       "value" : "",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206619,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : ""
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "genus" : {
+      "ref" : "NIH",
       "value" : "Homo",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206616,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "NIH"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     },
     "taxOrder" : {
+      "ref" : "NIH",
       "value" : "Primates",
-      "author" : "Tilchin",
-      "userId" : 1,
-      "submitted" : 1389508081.206605,
-      "rank" : {
-        "upvotes" : 0,
-        "downvotes" : 0,
-        "eha" : true
-      },
-      "ref" : "NIH"
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
     }
   },
   "eid" : {
+    "ref" : "512",
     "value" : "1",
-    "author" : "Tilchin",
-    "userId" : 1,
-    "submitted" : 1389508081.206395,
-    "rank" : {
-      "upvotes" : 0,
-      "downvotes" : 0,
-      "eha" : true
-    },
-    "ref" : "512"
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
   },
   "commentsCount" : 0
 
   });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
   Comments.insert({
-    entryId: eidOneId,
+    entryId: sickiOneId,
     userId: nico._id,
     author: nico.profile.name,
     submitted: now - 3 * 3600 * 1000,
@@ -717,39 +1144,1111 @@ var eidOneId = Entries.insert({
   });
 
   Comments.insert({
-    entryId: eidOneId,
+    entryId: sickiOneId,
     userId: carla._id,
     author: carla.profile.name,
     submitted: now - 5 * 3600 * 1000,
     body: 'Nico: we will need to follow-up with the primary research'
   });
 
-  var eidOneId = Entries.insert({
-    eidID: 2,
-    eventName: 'Oropouche virus (Sangre Grande, Trinidad, 1955)',
-    disease: [
-      {name:'Oropouche virus', ref: [135,567, 789], automate: false, expert: true, upvotes: 20, downvotes:15},
-      {name:'Orophouch', ref:456, upvotes:4}
-    ],
-    location: 'Sangre Grande, Trinidad',
-    year: 1955,
-    host: 'primate',
-    eid: 'deforestation',
-    url: 'http://en.wikipedia.org/wiki/Henipavirus#Nipah_virus',
-    x: 0.2789090881347656, 
-    y: 0.782, 
-    title: 'party on',
-    deaths: 1,
-    abstract: 'A 24-year old male charcoal burner acquired Oropouche fever on September 25, 1955 in the Melajo Forest outside of Sangre Grande, Trinidad.  Initial attempts at determining host and vector species for this pathogen did not provide definitive answers but suggested that it was a vector-borne (mosquito) pathogen present in various primate hosts.  The patient presented with nonspecific symptoms of fever, backache, and cough that lasted only three days and resolved on their own.  Recent governmental deforestation programs allowed charcoal burners to reside near their work site in open huts for long periods of time, increasing exposure probability.  This event marks the evolution of an existing organism that was determined to be a novel species, Oropouche virus (46)',
-    userId: carla._id,
-    author: carla.profile.name,
-    submitted: now - 10 * 3600 * 1000,
-    commentsCount: 0,
-    upvoters: [], votes: 0
+
+
+
+
+
+
+
+  var sickiTwoId = Entries.insert({
+
+  "characteristics" : {
+    "numberInfected" : {
+      "ref" : "459",
+      "value" : "1",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "symptomsReported" : {
+      "ref" : "",
+      "value" : "",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "numberOfDeaths" : {
+      "ref" : "",
+      "value" : "",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "prevalence" : {
+      "ref" : "",
+      "value" : "",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    }
+  },
+  "refs" : [ ],
+  "locations" : {
+    "placeName" : {
+      "ref" : "Jones et al.",
+      "value" : "Edinburgh Royal Infirmary Ecosse",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "name" : {
+      "ref" : "Jones et al.",
+      "value" : "Edinburgh",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "city" : {
+      "ref" : "Jones et al.",
+      "value" : "Edinburgh",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "latitude" : {
+      "ref" : "",
+      "value" : "",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "subnationalRegion" : {
+      "ref" : "",
+      "value" : "",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "continent" : {
+      "ref" : "Jones et al.",
+      "value" : "Europe",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "longitude" : {
+      "ref" : "",
+      "value" : "",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "nation" : {
+      "ref" : "Jones et al.",
+      "value" : "United Kingdom",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    }
+  },
+  "eidCategory" : {
+    "ref" : "459",
+    "value" : "new drug resistance",
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
+  },
+  "sickiID" : {
+    "ref" : "jones",
+    "value" : "2.0",
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
+  },
+  "contacts" : {
+    "firstName" : "",
+    "lastName" : "",
+    "userID" : "",
+    "affiliation" : "",
+    "blob" : {
+      "ref" : "",
+      "value" : ""
+    },
+    "email" : "",
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
+  },
+  "sampleType" : {
+    "ref" : "459",
+    "value" : "direct blood",
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
+  },
+  "eventName" : {
+    "ref" : "jones",
+    "value" : "Acinetobacter baumannii imipenem-res (UK, 1985)",
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
+  },
+  "metaData" : {
+    "reviewer" : "Tilchin",
+    "votes" : {
+      "down" : 0,
+      "up" : 0
+    },
+    "userId" : 0,
+    "submitted" : 1389563622.114659,
+    "rank" : {
+      "auto" : false,
+      "top" : true,
+      "expert" : false,
+      "eha" : true
+    }
+  },
+  "abstract" : {
+    "ref" : "459",
+    "value" : "An imipenem-resistant Acinetobacter baumannii strain was isolated from a patient at the Edinburgh Royal Infirmary in the United Kingdom in 1985.  No patient data was reported, but the infection was likely transmitted nosocomially. The event is driven by antimicrobial agent use and marks a new drug resistance.",
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
+  },
+  "driver" : {
+    "ref" : "459",
+    "value" : "antimicrobial agent use",
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
+  },
+  "refsCount" : 0,
+  "transmissionModel" : {
+    "ref" : "459",
+    "value" : "close (nosocomial)",
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
+  },
+  "pathogens" : {
+    "genus" : {
+      "ref" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock",
+      "value" : "Acinetobacter",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "taxOrder" : {
+      "ref" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock",
+      "value" : "Pseudomonadales",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "family" : {
+      "ref" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock",
+      "value" : "Moraxellaceae",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "subSpecies" : {
+      "ref" : "",
+      "value" : "",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "drugResistance" : {
+      "ref" : "495.0",
+      "value" : "1, resistant to: imipenem, penicillins, and and cephaloridine",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "reportedName" : {
+      "ref" : "495.0",
+      "value" : "Acinetobacter baumannii 6B92",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "class" : {
+      "ref" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock",
+      "value" : "Gammaproteobacteria",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "authority" : {
+      "ref" : "",
+      "value" : "",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "species" : {
+      "ref" : "Jones et al.",
+      "value" : "Acinetobacter baumannii multiple drug-res",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    }
+  },
+  "dates" : {
+    "duration" : {
+      "ref" : "",
+      "value" : "",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "startDate" : {
+      "ref" : "459",
+      "formValue" : "1985",
+      "value" : "1985",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "endDate" : {
+      "ref" : "459",
+      "formValue" : "1985",
+      "value" : "1985",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    }
+  },
+  "zoonoticType" : {
+    "ref" : "459",
+    "value" : "non-zoonotic",
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
+  },
+  "notes" : {
+    "ref" : "",
+    "value" : "",
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
+  },
+  "economics" : {
+    "avgLifeExpectEventCountryYear" : {
+      "ref" : "data.worldbank.org",
+      "value" : "74.6",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "avgAgeDeath" : {
+      "ref" : "",
+      "value" : "",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "perCapitaNatGDPEventYear" : {
+      "ref" : "data.worldbank.org",
+      "value" : "8210.0",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "avgAgeInfected" : {
+      "ref" : "",
+      "value" : "",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "tradeTravelRestrictions" : {
+      "ref" : "459.0",
+      "value" : "0.0",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "avgCostPerTreatment" : {
+      "ref" : "",
+      "value" : "",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "numHospitalized" : {
+      "ref" : "459.0",
+      "value" : "1.0",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    }
+  },
+  "disease" : {
+    "ref" : "459",
+    "value" : "none reported, but likely nosocomial",
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
+  },
+  "hosts" : {
+    "hostUse" : {
+      "ref" : "459",
+      "value" : "none",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "family" : {
+      "ref" : "",
+      "value" : "",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "authority" : {
+      "ref" : "",
+      "value" : "",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "sex" : {
+      "ref" : "",
+      "value" : "",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "reportedName" : {
+      "ref" : "459.0",
+      "value" : "none",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "class" : {
+      "ref" : "",
+      "value" : "",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "domesticationStatus" : {
+      "ref" : "",
+      "value" : "",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "species" : {
+      "ref" : "",
+      "value" : "",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "age" : {
+      "ref" : "",
+      "value" : "",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "subSpecies" : {
+      "ref" : "",
+      "value" : "",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "genus" : {
+      "ref" : "",
+      "value" : "",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    },
+    "taxOrder" : {
+      "ref" : "",
+      "value" : "",
+      "metaData" : {
+        "reviewer" : "eha",
+        "votes" : {
+          "down" : 0,
+          "up" : 0
+        },
+        "userId" : 0,
+        "submitted" : 1389563622.067435,
+        "rank" : {
+          "auto" : false,
+          "top" : true,
+          "expert" : false,
+          "eha" : true
+        }
+      }
+    }
+  },
+  "eid" : {
+    "ref" : "459",
+    "value" : "1",
+    "metaData" : {
+      "reviewer" : "eha",
+      "votes" : {
+        "down" : 0,
+        "up" : 0
+      },
+      "userId" : 0,
+      "submitted" : 1389563622.067435,
+      "rank" : {
+        "auto" : false,
+        "top" : true,
+        "expert" : false,
+        "eha" : true
+      }
+    }
+  },
+  "commentsCount" : 0
+
   });
 
   Comments.insert({
-    entryId: eidOneId,
+    entryId: sickiTwoId,
     userId: kris._id,
     author: kris.profile.name,
     submitted: now - 3 * 3600 * 1000,
@@ -757,7 +2256,7 @@ var eidOneId = Entries.insert({
   });
 
   Comments.insert({
-    entryId: eidOneId,
+    entryId: sickiTwoId,
     userId: nico._id,
     author: nico.profile.name,
     submitted: now - 5 * 3600 * 1000,

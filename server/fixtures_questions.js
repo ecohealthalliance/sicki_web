@@ -33,15 +33,27 @@ if (Questions.find().count() === 0) {
 
   Questions.insert({
     questionNumber: 2,
-    questionTitle: 'pathogens',
-    question: 'pathogen names',
-    questionHelper: 'names of pathogens implicated',
+    questionTitle: 'test',
+    question: 'testing',
+    questionHelper: 'testOutput',
     questionType: 'text',
     userId: nico._id,
     author: nico.profile.name,
     submitted: now - 9 * 3600 * 1000,
     commentsCount: 0
   });
+
+  // Questions.insert({
+  //   questionNumber: 2,
+  //   questionTitle: 'pathogens',
+  //   question: 'pathogen names',
+  //   questionHelper: 'names of pathogens implicated',
+  //   questionType: 'text',
+  //   userId: nico._id,
+  //   author: nico.profile.name,
+  //   submitted: now - 9 * 3600 * 1000,
+  //   commentsCount: 0
+  // });
 
   Questions.insert({
     questionNumber: 3,
