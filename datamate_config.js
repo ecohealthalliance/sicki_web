@@ -1,5 +1,5 @@
 Datamate.config({
-  keyField: 'eidID',
+  keyField: 'sickiID',
   titleField: 'eventName',
   subTitleField: 'disease'
 });
