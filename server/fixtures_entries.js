@@ -33,86 +33,680 @@ if (Entries.find().count() === 0) {
   });
   var kris = Meteor.users.findOne(krisId);
 
-  var eidOneId = Entries.insert({
-    eidID: 1,
-    eventName: 'Yersinia pestis (Al-Azzizat, Libya, 1976)',
-    pathogens:{
-      pathogenDrugResistance:'',
-      pathogenReportedName:'',
-      pathogenClass:'',
-      pathogenFamily:'',
-      pathogenSpecies:'',
-      pathogenAuthority:'',
-      pathogenTaxOrder:'',
-      pathogenGenus:'',
-      pathogenSubSpecies:''
+var eidOneId = Entries.insert({
+  "eidID" : "1",
+  "author" : "Tilchin",
+  "characteristics" : {
+    "numberInfected" : {
+      "value" : "45",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206634,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
       },
-    location:{
-      locationLocationName:'Al-Azzizat',
-      locationPlaceName:'',
-      locationLatitude:'',
-      locationLongitude:'',
-      locationCity:'',
-      locationSubnationalRegion:'northeast Libya',
-      locationNation:'Libya',
-      locationContinent:'Africa'
+      "ref" : "512"
+    },
+    "symptomsReported" : {
+      "value" : "no symptoms- just confirmed isolate of bacteria",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206644,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
       },
+      "ref" : "512"
+    },
+    "numberOfDeaths" : {
+      "value" : "35",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206646,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "512"
+    },
+    "prevalence" : {
+      "value" : "in patients: 1993/01-1993/06= 1.26/1000, 1993/07-1993/12= 6.62/1,000, 1994/01-06= 8.15, 1993/07-12= 6.28. average staff prevalence= 11%",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206642,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "512"
+    }
+  },
+    "abstract" : {
+    "value" : "An outbreak of gentamicin resistant Acinetobacter baumannii infection occurred in 35 patients and ten staff at the intensive care unit of Sir Charles Gairdner Hospital in Perth, Australia.  In a retrospective study it was determined that incidence rose from 1.26 cases per 1000 in January to June of 1993, to 6.62 cases per 1000 for July to December, 1993.  The infection manifested differently among patients with the most common cases comprising of pneumonia, central venous catheter infection, and urinary tract infection.  This event was driven by human susceptibility to infection and antimicrobial agent use, and represents a new drug resistance and increase in incidence.",
+    "author" : "Tilchin",
+    "userId" : 1,
+    "submitted" : 1389508081.206413,
+    "rank" : {
+      "upvotes" : 0,
+      "downvotes" : 0,
+      "eha" : true
+    },
+    "ref" : "512"
+  },
 
-    host:{
-      hostReportedName:'camel',
-      hostClass:'mammalia',
-      hostFamily:'Camelidae',
-      hostSpecies:'',
-      hostAuthority:'',
-      hostTaxOrder:'',
-      hostGenus:'Camelus',
-      hostSubSpecies:''
+  "userId" : 1,
+  "locations" : {
+    "placeName" : {
+      "value" : "Intensive Care Unit of Sir Charles Gairdner Hospital",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206552,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
       },
-    disease: [
-      {name:'plague', ref: [135,567, 789], automate: false, expert: true, upvotes: 20, downvotes:15},
-      {name:'black death', ref:456, upvotes:4, downvotes: 22}
-    ],
-    startDate: '1976-02-26',
-    startDateISO:'1976-02-26',
-    endDate:'',
-    endDateISO:'',
-    hostAge:'',
-    hostUse:'eaten',
-    transitionModel:'close: 4 patients had skinned the camel, 1 dealer who distrubuted meat, 7 had eaten or handled camel meat, 1 daughter of meal dealer',
-    zoonoticType:'zoonotic from wildlife',
-    numberInfected:13,
-    prevalence:'6% of the village (13 of 215 people)',
-    duration:'',
-    symptomsReported:'febrile illness, buboes',
-    hostSex:'',
-    sampleType:'serology',
-    driver:'',
-    eid:1,
-    eidCategory:'expanding host range: \"these incidents confirm previous reports that the camel and the goat are susceptible to naturally occurring plague infection and have a significant role in the dissemination of human plague\"',
-    domesticationStatus:'peri domestic',
-    numberOfDeaths:5,
-    contact:'',
-    notes:'',
-    economics:{
-      avgAgeOfInfected:'adult ',
-      avgAgeDeath:'adult',
-      tradeTravelRestrictions:5,
-      numHospitalizedInEvent:15,
-      avgCostPerTreatmentInEvent:'',
-      perCapitaNationalGDPInYearOfEvent:'',
-      avgLifeExpectancyInCountryAndYearOfEvent:61.5,
+      "ref" : "512.0"
+    },
+    "name" : {
+      "value" : "Nedlands",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206535,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
       },
-    year: 1976,
-    url: 'http://en.wikipedia.org/wiki/Spanish_flu',
-    x: 0.7589090881347656,
-    y: 0.372,
-    title: "party on",
-    abstract: "An outbreak of plague caused by Yersinia pestis began on February 26, 1976 in Al-Azzizat, Libya.  All 13 patients had direct or indirect contact with infected camel meat.  Patients presented with febrile illness and buboes.  A total of five patients died.  This event proved that camels are in fact susceptible to plague and can serve as natural hosts, showing an expansion of host range.  There is no clear driver to this event (135).",
-    userId: carla._id,
-    author: carla.profile.name,
-    submitted: now - 7 * 3600 * 1000,
-    commentsCount: 2
+      "ref" : "512.0"
+    },
+    "city" : {
+      "value" : "Nedlands",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206562,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "512.0"
+    },
+    "latitude" : {
+      "value" : "",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206559,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : ""
+    },
+    "subnationalRegion" : {
+      "value" : "Western Australia",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206565,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "512.0"
+    },
+    "continent" : {
+      "value" : "Australia",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206568,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "512.0"
+    },
+    "longitude" : {
+      "value" : "",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206561,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : ""
+    },
+    "nation" : {
+      "value" : "Australia",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206567,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "512.0"
+    }
+  },
+  "rank" : {
+    "eha" : true
+  },
+
+  "eidCategory" : {
+    "value" : "increased incidence, new drug resistance",
+    "author" : "Tilchin",
+    "userId" : 1,
+    "submitted" : 1389508081.2064,
+    "rank" : {
+      "upvotes" : 0,
+      "downvotes" : 0,
+      "eha" : true
+    },
+    "ref" : "512"
+  },
+  "contacts" : {
+    "affiliation" : "",
+    "blob" : {
+      "ref" : "",
+      "value" : ""
+    },
+    "firstName" : "",
+    "author" : "Tilchin",
+    "submitted" : 1389508081.206649,
+    "lastName" : "",
+    "userID" : "",
+    "email" : "",
+    "rank" : {
+      "upvotes" : 0,
+      "downvotes" : 0,
+      "eha" : true
+    },
+    "userId" : 1
+  },
+  "sampleType" : {
+    "value" : "There were five different primary initial sites of isolation of GRAB in the 45 cases: sputum or other respiratory tract specimen (including bronchial alveolar lavage) (35 cases=77%); wounds (five cases=11%); central venous catheter tips (three cases=6%); blood (one case=2%); and urine (one case=2%).",
+    "author" : "Tilchin",
+    "userId" : 1,
+    "submitted" : 1389508081.206432,
+    "rank" : {
+      "upvotes" : 0,
+      "downvotes" : 0,
+      "eha" : true
+    },
+    "ref" : "512"
+  },
+  "eventName" : "Acinetobacter baumannii gentamycin-res (Australia, 1993)",
+  "upvotes" : 0,
+  "downvotes" : 0,
+  "driver" : {
+    "value" : "human susceptibility to infection, antimicrobial agent use",
+    "author" : "Tilchin",
+    "userId" : 1,
+    "submitted" : 1389508081.206434,
+    "rank" : {
+      "upvotes" : 0,
+      "downvotes" : 0,
+      "eha" : true
+    },
+    "ref" : "512, Jones et al."
+  },
+  "transmissionModel" : {
+    "value" : "close: \"Carriage of GRAB on staff hands was demonstrated as the most likely source of infection.\"",
+    "author" : "Tilchin",
+    "userId" : 1,
+    "submitted" : 1389508081.206423,
+    "rank" : {
+      "upvotes" : 0,
+      "downvotes" : 0,
+      "eha" : true
+    },
+    "ref" : "512"
+  },
+  "pathogens" : {
+    "genus" : {
+      "value" : "Acinetobacter",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.20652,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock"
+    },
+    "taxOrder" : {
+      "value" : "Pseudomonadales",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206518,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock"
+    },
+    "family" : {
+      "value" : "Moraxellaceae",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206498,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock"
+    },
+    "subSpecies" : {
+      "value" : "",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206522,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : ""
+    },
+    "drugResistance" : {
+      "value" : "1.0",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206479,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : ""
+    },
+    "reportedName" : {
+      "value" : "",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206482,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : ""
+    },
+    "class" : {
+      "value" : "Gammaproteobacteria",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206495,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock"
+    },
+    "authority" : {
+      "value" : "",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206511,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : ""
+    },
+    "species" : {
+      "value" : "Acinetobacter baumannii multiple drug-res",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206508,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "Jones et al."
+    }
+  },
+  "dates" : {
+    "duration" : {
+      "value" : "retrospective study 2 years, median ICU stay 16 days",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206631,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "512"
+    },
+    "startDate" : {
+      "submitted" : 1389508081.206627,
+      "author" : "Tilchin",
+      "userId" : 1,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "formValue" : "1993-01-01",
+      "value" : "1993-01-01",
+      "ref" : "512"
+    },
+    "endDate" : {
+      "submitted" : 1389508081.206629,
+      "author" : "Tilchin",
+      "userId" : 1,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "formValue" : "1994-12-31",
+      "value" : "1994-12-31",
+      "ref" : "512"
+    }
+  },
+  "zoonoticType" : {
+    "value" : "non-zoonotic",
+    "author" : "Tilchin",
+    "userId" : 1,
+    "submitted" : 1389508081.20643,
+    "rank" : {
+      "upvotes" : 0,
+      "downvotes" : 0,
+      "eha" : true
+    },
+    "ref" : "512"
+  },
+  "notes" : {
+    "value" : "",
+    "author" : "Tilchin",
+    "userId" : 1,
+    "submitted" : 1389508081.206421,
+    "rank" : {
+      "upvotes" : 0,
+      "downvotes" : 0,
+      "eha" : true
+    },
+    "ref" : ""
+  },
+  "economics" : {
+    "avgLifeExpectEventCountryYear" : {
+      "value" : "77.9",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206672,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "data.worldbank.org"
+    },
+    "avgAgeDeath" : {
+      "value" : "no death",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206653,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "512.0"
+    },
+    "perCapitaNatGDPEventYear" : {
+      "value" : "17678.0",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.20667,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "data.worldbank.org"
+    },
+    "avgAgeInfected" : {
+      "value" : "51.0",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206651,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "512.0"
+    },
+    "tradeTravelRestrictions" : {
+      "value" : "0.0",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.20666,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "512.0"
+    },
+    "avgCostPerTreatment" : {
+      "value" : "",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206663,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : ""
+    },
+    "numHospitalized" : {
+      "value" : "45.0",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206661,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "512.0"
+    }
+  },
+  "disease" : {
+    "value" : "\"Among 45 cases...27 cases met the CDC criteria for infection..pneumonia (74%), bacteremia (7%), CVC related infections (22%), empyema (4%), urinary tract infection (11%), and wound infection (4%)\"",
+    "author" : "Tilchin",
+    "userId" : 1,
+    "submitted" : 1389508081.206391,
+    "rank" : {
+      "upvotes" : 0,
+      "downvotes" : 0,
+      "eha" : true
+    },
+    "ref" : "512"
+  },
+  "submitted" : 1389508081.206722,
+  "hosts" : {
+    "hostUse" : {
+      "value" : "providing hospital care",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206583,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "512"
+    },
+    "family" : {
+      "value" : "Hominidae",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206599,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "NIH"
+    },
+    "authority" : {
+      "value" : "",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206603,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : ""
+    },
+    "sex" : {
+      "value" : "",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206576,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : ""
+    },
+    "reportedName" : {
+      "value" : "human",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.20659,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "512.0"
+    },
+    "class" : {
+      "value" : "mammalia",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206597,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "NIH"
+    },
+    "domesticationStatus" : {
+      "value" : "",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206578,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : ""
+    },
+    "species" : {
+      "value" : "Homo sapiens",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206601,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "NIH"
+    },
+    "age" : {
+      "value" : "average 51 yr",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206581,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "512"
+    },
+    "subSpecies" : {
+      "value" : "",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206619,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : ""
+    },
+    "genus" : {
+      "value" : "Homo",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206616,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "NIH"
+    },
+    "taxOrder" : {
+      "value" : "Primates",
+      "author" : "Tilchin",
+      "userId" : 1,
+      "submitted" : 1389508081.206605,
+      "rank" : {
+        "upvotes" : 0,
+        "downvotes" : 0,
+        "eha" : true
+      },
+      "ref" : "NIH"
+    }
+  },
+  "eid" : {
+    "value" : "1",
+    "author" : "Tilchin",
+    "userId" : 1,
+    "submitted" : 1389508081.206395,
+    "rank" : {
+      "upvotes" : 0,
+      "downvotes" : 0,
+      "eha" : true
+    },
+    "ref" : "512"
+  },
+  "commentsCount" : 0
+
   });
+
 
   Comments.insert({
     entryId: eidOneId,
@@ -170,27 +764,4 @@ if (Entries.find().count() === 0) {
     body: 'Kris: yes, we will need more follow-up'
   });
 
-  Entries.insert({
-    eidID: 3,
-    eventName: 'Human Immunodeficiency Virus 2 (Guinea Bissau, 1960)',
-    disease: [
-      {name:'HIV-2', ref: [789], automate: false, expert: true, upvotes: 20, downvotes:15},
-      {name:'Human Immunodeficiency V-2', ref:[777,456], upvotes:4}
-    ],
-    location: 'Guinea Bissau',
-    year: 1960,
-    host: 'primate',
-    eid: 'conflict',
-    url: 'http://en.wikipedia.org/wiki/E_coli',
-    x: 0.5689090881347656, 
-    y: 0.662, 
-    title: "party on",
-    deaths: 2,
-    abstract: "In 1978, a 43 year old male living in Portugal died of complications from numerous opportunistic infections. Reportedly, the patient presented with, \" (a) history of intermittent fever for 4 years and diarrhea, weight loss, and abdominal pain for 2 years ... was grossly wasted ... had an enlarged liver ... and had fluctuating hepatitis with episodes of fever, hepatosplenomegaly, lymphadenopathy and jaundice\" (104).  In 1987, HIV-2 was identified in serum samples taken from the patient during his hospitalization in 1978, making this the earliest confirmed case of HIV-2 infection. The patient had lived in Guinea-Bissau, a former Portuguese colony, from 1956 to 1966, a country identified with widespread emergence of HIV-2 infection (376, 339). It is possible that destabilization of the region, because of the Guinea-Bissau war of independence (1963-1974), coupled with possible HIV-2 infection of the blood supply during that time period drove the emergence of HIV-2 (339). ",
-    userId: zach._id,
-    author: zach.profile.name,
-    submitted: now - 12 * 3600 * 1000,
-    commentsCount: 0,
-    upvoters: [], votes: 0
-  });
-}
+} /*end if*/
