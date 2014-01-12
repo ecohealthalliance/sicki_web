@@ -1,9 +1,11 @@
 <template name="entryItem2">
   <div class="entry">
     <div class="entry-content">
-      <h3><a href="{{pathFor 'dash'}}"> {{eventName}} </a>
+      <h3><a href="{{pathFor 'dash'}}"> {{eventName.value}} </a>
       	<span> 
-      	{{#expert disease}} {{name}} {{upvotes}} {{downvotes}} {{/expert}}
+      	<!--display eha selected disease name 
+      	{{#ehaRank disease}} {{value}} {{/ehaRank}}
+      -->
 	    </span>
       </h3>
     </div>
