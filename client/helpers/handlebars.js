@@ -29,3 +29,12 @@ Handlebars.registerHelper('expert', function(items, options) {
     return ex.expert==true;});
   return options.fn(expertObj[0]);
 });
+
+/*
+Handlebars.registerHelper('ehaRank', function(items, options) {
+  ehaObj = _.filter(items, function(ex){
+    console.log(ex.metaData.rank.eha)
+    return ex.metaData.rank.eha==true;});
+  return options.fn(expertObj[0]);
+});
+*/
