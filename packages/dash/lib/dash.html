@@ -18,7 +18,7 @@
 						<div class="ribbon-back-right"></div>
 					</div>
 					{{/if}}
-					<h2>  {{eventName.value}} </h2>
+					<h2>  {{eventName.val}} </h2>
 				</div>
 
 			</div>
@@ -42,22 +42,22 @@
 								<div class="row">
 									<h2 class="label"> Disease: </h2>
 									<h2 class="value"> 
-										{{#if disease.formValue}}
-											{{disease.formValue}}
+										{{#if disease.valForm}}
+											{{disease.valForm}}
 										{{else}}
-											{{disease.value}}
+											{{disease.val}}
 										{{/if}} 
 									</h2>
 								</div>
 
 								<div class="row">
 									<h2 class="label"> Infected: </h2>
-									<h2 class="value"> {{characteristics.numberInfected.value}} </h2>
+									<h2 class="value"> {{characteristics.numberInfected.val}} </h2>
 								</div>
 
 								<div class="row">
 									<h2 class="label"> Deaths: </h2>
-									<h2 class="value"> {{characteristics.numberOfDeaths.value}} </h2>
+									<h2 class="value"> {{characteristics.numberOfDeaths.val}} </h2>
 								</div>
 							</div>
 						</div>
@@ -74,9 +74,23 @@
 			</div>
 
 			<div class="row">
-				<div class="col-md-1 vertime"><h1>2 <br/> 0 <br/> 0 <br /> 1 </h1></div>
+				<div class="col-md-1 vertime">
+					<h1>
+					{{dataSlice dates.startDate.valForm 0}}<br/> 
+					{{dataSlice dates.startDate.valForm 1}}<br/> 
+					{{dataSlice dates.startDate.valForm 2}}<br/> 
+					{{dataSlice dates.startDate.valForm 3}}
+					</h1>
+				</div>
 				<div class="col-md-10"><img src="/packages/dash/lib/timer.png" /></div>
-				<div class="col-md-1 vertime"><h1>2 <br/> 0 <br/> 0 <br /> 3 </h1></div>
+				<div class="col-md-1 vertime">
+					<h1>
+					{{dataSlice dates.endDate.valForm 0}}<br/> 
+					{{dataSlice dates.endDate.valForm 1}}<br/> 
+					{{dataSlice dates.endDate.valForm 2}}<br/> 
+					{{dataSlice dates.endDate.valForm 3}}
+					</h1>
+				</div>
 			</div>
 		</div>
 	</div>
