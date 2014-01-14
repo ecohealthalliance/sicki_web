@@ -34,8 +34,10 @@ if (Entries.find().count() === 0) {
   var kris = Meteor.users.findOne(krisId);
 
 var sickiOneId = Entries.insert({
+
   "characteristics" : {
     "numberInfected" : {
+      "refBlob" : "512",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -43,7 +45,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -51,10 +53,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "512",
+      "ref" : [ ],
       "val" : "45"
     },
     "symptomsReported" : {
+      "refBlob" : "512",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -62,7 +65,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -70,10 +73,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "512",
+      "ref" : [ ],
       "val" : "no symptoms- just confirmed isolate of bacteria"
     },
     "numberOfDeaths" : {
+      "refBlob" : "512",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -81,7 +85,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -89,10 +93,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "512",
+      "ref" : [ ],
       "val" : "0"
     },
     "prevalence" : {
+      "refBlob" : "512",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -100,7 +105,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -108,13 +113,14 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "512",
+      "ref" : [ ],
       "val" : "in patients: 1993/01-1993/06= 1.26/1000, 1993/07-1993/12= 6.62/1,000, 1994/01-06= 8.15, 1993/07-12= 6.28. average staff prevalence= 11%"
     }
   },
   "refs" : [ ],
   "locations" : {
     "placeName" : {
+      "refBlob" : "512.0",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -122,7 +128,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -130,10 +136,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "512.0",
+      "ref" : [ ],
       "val" : "Intensive Care Unit of Sir Charles Gairdner Hospital"
     },
     "name" : {
+      "refBlob" : "512.0",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -141,7 +148,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -149,10 +156,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "512.0",
+      "ref" : [ ],
       "val" : "Nedlands"
     },
     "city" : {
+      "refBlob" : "512.0",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -160,7 +168,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -168,10 +176,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "512.0",
+      "ref" : [ ],
       "val" : "Nedlands"
     },
     "latitude" : {
+      "refBlob" : "",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -179,7 +188,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -187,10 +196,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "",
+      "ref" : [ ],
       "val" : ""
     },
     "subnationalRegion" : {
+      "refBlob" : "512.0",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -198,7 +208,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -206,10 +216,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "512.0",
+      "ref" : [ ],
       "val" : "Western Australia"
     },
     "continent" : {
+      "refBlob" : "512.0",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -217,7 +228,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -225,10 +236,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "512.0",
+      "ref" : [ ],
       "val" : "Australia"
     },
     "longitude" : {
+      "refBlob" : "",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -236,7 +248,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -244,10 +256,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "",
+      "ref" : [ ],
       "val" : ""
     },
     "nation" : {
+      "refBlob" : "512.0",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -255,7 +268,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -263,7 +276,7 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "512.0",
+      "ref" : [ ],
       "val" : "Australia"
     }
   },
@@ -274,7 +287,7 @@ var sickiOneId = Entries.insert({
       "up" : 0
     },
     "userId" : 0,
-    "submitted" : 1389571746.934933,
+    "submitted" : "2014-01-13T05:08:51.762Z",
     "rank" : {
       "auto" : false,
       "top" : true,
@@ -283,6 +296,7 @@ var sickiOneId = Entries.insert({
     }
   },
   "eidCategory" : {
+    "refBlob" : "512",
     "meta" : {
       "reviewer" : "eha",
       "votes" : {
@@ -290,7 +304,7 @@ var sickiOneId = Entries.insert({
         "up" : 0
       },
       "userId" : 0,
-      "submitted" : 1389571746.895151,
+      "submitted" : "2014-01-13T05:08:51.756Z",
       "rank" : {
         "auto" : false,
         "top" : true,
@@ -298,7 +312,7 @@ var sickiOneId = Entries.insert({
         "eha" : true
       }
     },
-    "ref" : "512",
+    "ref" : [ ],
     "val" : "increased incidence, new drug resistance"
   },
   "sickiID" : {
@@ -309,7 +323,7 @@ var sickiOneId = Entries.insert({
         "up" : 0
       },
       "userId" : 0,
-      "submitted" : 1389571746.895151,
+      "submitted" : "2014-01-13T05:08:51.756Z",
       "rank" : {
         "auto" : false,
         "top" : true,
@@ -317,7 +331,7 @@ var sickiOneId = Entries.insert({
         "eha" : true
       }
     },
-    "ref" : "jones",
+    "ref" : "ehaID",
     "val" : "1.0"
   },
   "contacts" : {
@@ -332,7 +346,7 @@ var sickiOneId = Entries.insert({
         "up" : 0
       },
       "userId" : 0,
-      "submitted" : 1389571746.895151,
+      "submitted" : "2014-01-13T05:08:51.756Z",
       "rank" : {
         "auto" : false,
         "top" : true,
@@ -341,12 +355,14 @@ var sickiOneId = Entries.insert({
       }
     },
     "blob" : {
-      "ref" : "",
+      "refBlob" : "",
+      "ref" : [ ],
       "val" : ""
     },
     "email" : ""
   },
   "sampleType" : {
+    "refBlob" : "512",
     "meta" : {
       "reviewer" : "eha",
       "votes" : {
@@ -354,7 +370,7 @@ var sickiOneId = Entries.insert({
         "up" : 0
       },
       "userId" : 0,
-      "submitted" : 1389571746.895151,
+      "submitted" : "2014-01-13T05:08:51.756Z",
       "rank" : {
         "auto" : false,
         "top" : true,
@@ -362,10 +378,11 @@ var sickiOneId = Entries.insert({
         "eha" : true
       }
     },
-    "ref" : "512",
+    "ref" : [ ],
     "val" : "There were five different primary initial sites of isolation of GRAB in the 45 cases: sputum or other respiratory tract specimen (including bronchial alveolar lavage) (35 cases=77%); wounds (five cases=11%); central venous catheter tips (three cases=6%); blood (one case=2%); and urine (one case=2%)."
   },
   "eventName" : {
+    "refBlob" : "Jones et al. SI",
     "meta" : {
       "reviewer" : "eha",
       "votes" : {
@@ -373,7 +390,7 @@ var sickiOneId = Entries.insert({
         "up" : 0
       },
       "userId" : 0,
-      "submitted" : 1389571746.895151,
+      "submitted" : "2014-01-13T05:08:51.756Z",
       "rank" : {
         "auto" : false,
         "top" : true,
@@ -381,10 +398,11 @@ var sickiOneId = Entries.insert({
         "eha" : true
       }
     },
-    "ref" : "jones",
+    "ref" : [ ],
     "val" : "Acinetobacter baumannii gentamycin-res (Australia, 1993)"
   },
   "abstract" : {
+    "refBlob" : "512",
     "meta" : {
       "reviewer" : "eha",
       "votes" : {
@@ -392,7 +410,7 @@ var sickiOneId = Entries.insert({
         "up" : 0
       },
       "userId" : 0,
-      "submitted" : 1389571746.895151,
+      "submitted" : "2014-01-13T05:08:51.756Z",
       "rank" : {
         "auto" : false,
         "top" : true,
@@ -400,10 +418,11 @@ var sickiOneId = Entries.insert({
         "eha" : true
       }
     },
-    "ref" : "512",
+    "ref" : [ ],
     "val" : "An outbreak of gentamicin resistant Acinetobacter baumannii infection occurred in 35 patients and ten staff at the intensive care unit of Sir Charles Gairdner Hospital in Perth, Australia.  In a retrospective study it was determined that incidence rose from 1.26 cases per 1000 in January to June of 1993, to 6.62 cases per 1000 for July to December, 1993.  The infection manifested differently among patients with the most common cases comprising of pneumonia, central venous catheter infection, and urinary tract infection.  This event was driven by human susceptibility to infection and antimicrobial agent use, and represents a new drug resistance and increase in incidence."
   },
   "driver" : {
+    "refBlob" : "512, Jones et al.",
     "meta" : {
       "reviewer" : "eha",
       "votes" : {
@@ -411,7 +430,7 @@ var sickiOneId = Entries.insert({
         "up" : 0
       },
       "userId" : 0,
-      "submitted" : 1389571746.895151,
+      "submitted" : "2014-01-13T05:08:51.756Z",
       "rank" : {
         "auto" : false,
         "top" : true,
@@ -419,11 +438,12 @@ var sickiOneId = Entries.insert({
         "eha" : true
       }
     },
-    "ref" : "512, Jones et al.",
+    "ref" : [ ],
     "val" : "human susceptibility to infection, antimicrobial agent use"
   },
   "refsCount" : 0,
   "transmissionModel" : {
+    "refBlob" : "512",
     "meta" : {
       "reviewer" : "eha",
       "votes" : {
@@ -431,7 +451,7 @@ var sickiOneId = Entries.insert({
         "up" : 0
       },
       "userId" : 0,
-      "submitted" : 1389571746.895151,
+      "submitted" : "2014-01-13T05:08:51.756Z",
       "rank" : {
         "auto" : false,
         "top" : true,
@@ -439,11 +459,12 @@ var sickiOneId = Entries.insert({
         "eha" : true
       }
     },
-    "ref" : "512",
+    "ref" : [ ],
     "val" : "close: \"Carriage of GRAB on staff hands was demonstrated as the most likely source of infection.\""
   },
   "pathogens" : {
     "genus" : {
+      "refBlob" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -451,7 +472,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -459,10 +480,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock",
+      "ref" : [ ],
       "val" : "Acinetobacter"
     },
     "taxOrder" : {
+      "refBlob" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -470,7 +492,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -478,10 +500,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock",
+      "ref" : [ ],
       "val" : "Pseudomonadales"
     },
     "family" : {
+      "refBlob" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -489,7 +512,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -497,10 +520,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock",
+      "ref" : [ ],
       "val" : "Moraxellaceae"
     },
     "subSpecies" : {
+      "refBlob" : "",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -508,7 +532,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -516,10 +540,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "",
+      "ref" : [ ],
       "val" : ""
     },
     "drugResistance" : {
+      "refBlob" : "",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -527,7 +552,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -535,10 +560,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "",
+      "ref" : [ ],
       "val" : "1.0"
     },
     "reportedName" : {
+      "refBlob" : "",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -546,7 +572,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -554,10 +580,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "",
+      "ref" : [ ],
       "val" : ""
     },
     "class" : {
+      "refBlob" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -565,7 +592,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -573,10 +600,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=470&lvl=3&lin=f&keep=1&srchmode=1&unlock",
+      "ref" : [ ],
       "val" : "Gammaproteobacteria"
     },
     "authority" : {
+      "refBlob" : "",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -584,7 +612,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -592,10 +620,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "",
+      "ref" : [ ],
       "val" : ""
     },
     "species" : {
+      "refBlob" : "Jones et al.",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -603,7 +632,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -611,12 +640,13 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "Jones et al.",
+      "ref" : [ ],
       "val" : "Acinetobacter baumannii multiple drug-res"
     }
   },
   "dates" : {
     "duration" : {
+      "refBlob" : "512",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -624,7 +654,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -632,11 +662,12 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "512",
+      "ref" : [ ],
       "val" : "retrospective study 2 years, median ICU stay 16 days"
     },
     "startDate" : {
       "valForm" : "1993-01-01",
+      "refBlob" : "512",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -644,7 +675,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -652,11 +683,12 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "512",
+      "ref" : [ ],
       "val" : "1993-01-01"
     },
     "endDate" : {
       "valForm" : "1994-12-31",
+      "refBlob" : "512",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -664,7 +696,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -672,11 +704,12 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "512",
+      "ref" : [ ],
       "val" : "1994-12-31"
     }
   },
   "zoonoticType" : {
+    "refBlob" : "512",
     "meta" : {
       "reviewer" : "eha",
       "votes" : {
@@ -684,7 +717,7 @@ var sickiOneId = Entries.insert({
         "up" : 0
       },
       "userId" : 0,
-      "submitted" : 1389571746.895151,
+      "submitted" : "2014-01-13T05:08:51.756Z",
       "rank" : {
         "auto" : false,
         "top" : true,
@@ -692,10 +725,11 @@ var sickiOneId = Entries.insert({
         "eha" : true
       }
     },
-    "ref" : "512",
+    "ref" : [ ],
     "val" : "non-zoonotic"
   },
   "notes" : {
+    "refBlob" : "",
     "meta" : {
       "reviewer" : "eha",
       "votes" : {
@@ -703,7 +737,7 @@ var sickiOneId = Entries.insert({
         "up" : 0
       },
       "userId" : 0,
-      "submitted" : 1389571746.895151,
+      "submitted" : "2014-01-13T05:08:51.756Z",
       "rank" : {
         "auto" : false,
         "top" : true,
@@ -711,19 +745,20 @@ var sickiOneId = Entries.insert({
         "eha" : true
       }
     },
-    "ref" : "",
+    "ref" : [ ],
     "val" : ""
   },
   "economics" : {
     "avgLifeExpectEventCountryYear" : {
+      "refBlob" : "data.worldbank.org",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
           "down" : 0,
           "up" : 0
-        },
+          },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -731,10 +766,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "data.worldbank.org",
+      "ref" : [ ],
       "val" : "77.9"
     },
     "avgAgeDeath" : {
+      "refBlob" : "512.0",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -742,7 +778,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -750,10 +786,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "512.0",
+      "ref" : [ ],
       "val" : "no death"
     },
     "perCapitaNatGDPEventYear" : {
+      "refBlob" : "data.worldbank.org",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -761,7 +798,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -769,10 +806,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "data.worldbank.org",
+      "ref" : [ ],
       "val" : "17678.0"
     },
     "avgAgeInfected" : {
+      "refBlob" : "512.0",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -780,7 +818,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -788,10 +826,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "512.0",
+      "ref" : [ ],
       "val" : "51.0"
     },
     "tradeTravelRestrictions" : {
+      "refBlob" : "512.0",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -799,7 +838,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -807,10 +846,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "512.0",
+      "ref" : [ ],
       "val" : "0.0"
     },
     "avgCostPerTreatment" : {
+      "refBlob" : "",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -818,7 +858,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -826,10 +866,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "",
+      "ref" : [ ],
       "val" : ""
     },
     "numHospitalized" : {
+      "refBlob" : "512.0",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -837,7 +878,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -845,11 +886,12 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "512.0",
+      "ref" : [ ],
       "val" : "45.0"
     }
   },
   "disease" : {
+    "refBlob" : "512",
     "meta" : {
       "reviewer" : "eha",
       "votes" : {
@@ -857,7 +899,7 @@ var sickiOneId = Entries.insert({
         "up" : 0
       },
       "userId" : 0,
-      "submitted" : 1389571746.895151,
+      "submitted" : "2014-01-13T05:08:51.756Z",
       "rank" : {
         "auto" : false,
         "top" : true,
@@ -865,11 +907,12 @@ var sickiOneId = Entries.insert({
         "eha" : true
       }
     },
-    "ref" : "512",
+    "ref" : [ ],
     "val" : "\"Among 45 cases...27 cases met the CDC criteria for infection..pneumonia (74%), bacteremia (7%), CVC related infections (22%), empyema (4%), urinary tract infection (11%), and wound infection (4%)\""
   },
   "hosts" : {
     "hostUse" : {
+      "refBlob" : "512",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -877,7 +920,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -885,10 +928,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "512",
+      "ref" : [ ],
       "val" : "providing hospital care"
     },
     "family" : {
+      "refBlob" : "NIH",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -896,7 +940,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -904,10 +948,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "NIH",
+      "ref" : [ ],
       "val" : "Hominidae"
     },
     "authority" : {
+      "refBlob" : "",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -915,7 +960,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -923,10 +968,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "",
+      "ref" : [ ],
       "val" : ""
     },
     "sex" : {
+      "refBlob" : "",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -934,7 +980,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -942,10 +988,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "",
+      "ref" : [ ],
       "val" : ""
     },
     "reportedName" : {
+      "refBlob" : "512.0",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -953,7 +1000,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -961,10 +1008,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "512.0",
+      "ref" : [ ],
       "val" : "human"
     },
     "class" : {
+      "refBlob" : "NIH",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -972,7 +1020,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -980,10 +1028,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "NIH",
+      "ref" : [ ],
       "val" : "mammalia"
     },
     "domesticationStatus" : {
+      "refBlob" : "",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -991,7 +1040,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -999,10 +1048,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "",
+      "ref" : [ ],
       "val" : ""
     },
     "species" : {
+      "refBlob" : "NIH",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -1010,7 +1060,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -1018,10 +1068,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "NIH",
+      "ref" : [ ],
       "val" : "Homo sapiens"
     },
     "age" : {
+      "refBlob" : "512",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -1029,7 +1080,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -1037,10 +1088,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "512",
+      "ref" : [ ],
       "val" : "average 51 yr"
     },
     "subSpecies" : {
+      "refBlob" : "",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -1048,7 +1100,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -1056,10 +1108,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "",
+      "ref" : [ ],
       "val" : ""
     },
     "genus" : {
+      "refBlob" : "NIH",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -1067,7 +1120,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -1075,10 +1128,11 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "NIH",
+      "ref" : [ ],
       "val" : "Homo"
     },
     "taxOrder" : {
+      "refBlob" : "NIH",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -1086,7 +1140,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : 1389571746.895151,
+        "submitted" : "2014-01-13T05:08:51.756Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -1094,11 +1148,12 @@ var sickiOneId = Entries.insert({
           "eha" : true
         }
       },
-      "ref" : "NIH",
+      "ref" : [ ],
       "val" : "Primates"
     }
   },
   "eid" : {
+    "refBlob" : "512",
     "meta" : {
       "reviewer" : "eha",
       "votes" : {
@@ -1106,7 +1161,7 @@ var sickiOneId = Entries.insert({
         "up" : 0
       },
       "userId" : 0,
-      "submitted" : 1389571746.895151,
+      "submitted" : "2014-01-13T05:08:51.756Z",
       "rank" : {
         "auto" : false,
         "top" : true,
@@ -1114,10 +1169,11 @@ var sickiOneId = Entries.insert({
         "eha" : true
       }
     },
-    "ref" : "512",
+    "ref" : [ ],
     "val" : "1"
   },
   "commentsCount" : 0
+
 
   });
 
