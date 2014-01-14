@@ -12,73 +12,84 @@
   </ul>
   
   <div id="tabs-1" class="tabhigh"> <!-- abstract -->
-    <p>{{abstract.val}} </p>
+    {{abstract.val}}
   </div>
 
   <div id="tabs-2" class="tabhigh"> <!-- stats -->
-    <p>Start Date: {{dates.startDate.valForm}}</p>
-    <p>End Date: {{dates.endDate.valForm}}</p>
-    <p>Host Age: {{hosts.age.val}}</p>
-    <p>Host Use: {{hosts.use.val}}</p>
-    <p>Transition Model: {{transitionModel.val}}</p>
-    <p>Zoonotic Type: {{zoonoticType.val}}</p>
-    <p>Number Infected: {{characteristics.numberInfected.val}}</p>
-    <p>Prevalence: {{characteristics.prevalence.val}}</p>
-    <p>Duration: {{dates.duration.val}}</p>
-    <p>Symptoms Reported: {{characteristics.symptomsReported.val}}</p>
-    <p>Host Sex: {{hosts.hostSex.val}}</p>
-    <p>Sample Type: {{sampleType.val}}</p>
-    <p>Driver: {{driver.val}}</p>
-    <p>EID Category: {{eidCategory.val}}</p>
+    <table class="table table-striped table-hover">
+    <tr><td> Start Date </td> <td> {{dates.startDate.valForm}}</td></tr>
+    <tr><td> End Date </td> <td> {{dates.endDate.valForm}} </td></tr>
+    <tr><td> Host Age </td> <td> {{hosts.age.val}} </td></tr>
+    <tr><td> Host Use </td> <td> {{hosts.use.val}} </td></tr>
+    <tr><td> Transition Model </td> <td> {{transitionModel.val}} </td></tr>
+    <tr><td> Zoonotic Type </td> <td> {{zoonoticType.val}} </td></tr>
+    <tr><td> Number Infected </td> <td> {{characteristics.numberInfected.val}} </td></tr>
+    <tr><td> Prevalence </td> <td> {{characteristics.prevalence.val}} </td></tr>
+    <tr><td> Duration </td> <td> {{dates.duration.val}} </td></tr>
+    <tr><td> Symptoms Reported </td> <td> {{characteristics.symptomsReported.val}} </td></tr>
+    <tr><td> Host Sex </td> <td> {{hosts.hostSex.val}} </td></tr>
+    <tr><td> Sample Type </td> <td> {{sampleType.val}} </td></tr>
+    <tr><td> Driver </td> <td> {{driver.val}} </td></tr>
+    <tr><td> EID Category </td> <td> {{eidCategory.val}} </td></tr>
+    </table>
   </div>
 
   <div id="tabs-3" class="tabhigh"> <!-- agent -->
-    <p>Drug Resistance: {{pathogens.pathogenDrugResistance.val}}</p>
-    <p>Reported Name: {{pathogens.pathogenReportedName.val}}</p>
-    <p>Class: {{pathogens.pathogenClass.val}}</p>
-    <p>Family: {{pathogens.pathogenFamily.val}}</p>
-    <p>Species: {{pathogens.pathogenSpecies.val}}</p>
-    <p>Authority: {{pathogens.pathogenAuthority.val}}</p>
-    <p>Taxonomic Order: {{pathogens.pathogenTaxOrder.val}}</p>
-    <p>Genus: {{pathogens.pathogenGenus.val}}</p>
-    <p>Sub Species: {{pathogens.pathogenSubSpecies.val}}</p>
+    <table class="table table-striped table-hover">
+    <tr><td> Drug Resistance </td> <td> {{pathogens.pathogenDrugResistance.val}} </td></tr>
+    <tr><td> Reported Name </td> <td> {{pathogens.pathogenReportedName.val}} </td></tr>
+    <tr><td> Class </td> <td> {{pathogens.pathogenClass.val}} </td></tr>
+    <tr><td> Family </td> <td> {{pathogens.pathogenFamily.val}} </td></tr>
+    <tr><td> Species </td> <td> {{pathogens.pathogenSpecies.val}} </td></tr>
+    <tr><td> Authority </td> <td> {{pathogens.pathogenAuthority.val}} </td></tr>
+    <tr><td> Taxonomic Order </td> <td> {{pathogens.pathogenTaxOrder.val}} </td></tr>
+    <tr><td> Genus </td> <td> {{pathogens.pathogenGenus.val}} </td></tr>
+    <tr><td> Sub Species </td> <td> {{pathogens.pathogenSubSpecies.val}} </td></tr>
+    </table>
   </div>
 
   <div id="tabs-4" class="tabhigh"> <!-- location -->
-    <p>Location Name: {{location.locationLocationName.val}}</p>
-    <p>Place Name: {{location.locationPlaceName.val}}</p>
-    <p>Latitude: {{location.locationLatitude.val}}</p>
-    <p>Longitute: {{location.locationLongitude.val}}</p>
-    <p>City: {{location.locationCity.val}}</p>
-    <p>Subnational Region: {{location.locationSubnationalRegion.val}}</p>
-    <p>Nation: {{location.locationNation.val}}</p>
-    <p>Continent: {{location.locationContinent.val}}</p>
+    <table class="table table-striped table-hover">
+    <tr><td> Location Name </td> <td> {{location.locationLocationName.val}} </td></tr>
+    <tr><td> Place Name </td> <td> {{location.locationPlaceName.val}} </td></tr>
+    <tr><td> Latitude </td> <td> {{location.locationLatitude.val}} </td></tr>
+    <tr><td> Longitute </td> <td> {{location.locationLongitude.val}} </td></tr>
+    <tr><td> City </td> <td> {{location.locationCity.val}} </td></tr>
+    <tr><td> Subnational Region </td> <td> {{location.locationSubnationalRegion.val}} </td></tr>
+    <tr><td> Nation </td> <td> {{location.locationNation.val}} </td></tr>
+    <tr><td> Continent </td> <td> {{location.locationContinent.val}} </td></tr>
+    </table>
   </div>
 
   <div id="tabs-5" class="tabhigh"> <!-- host -->
-    <p>Domestication Status: {{host.domesticationStatus.val}}</p>
-    <p>Reported Name: {{host.hostReportedName.val}}</p>
-    <p>Class: {{host.hostClass.val}}</p>
-    <p>Family: {{host.hostFamily.val}}</p>
-    <p>Species: {{host.hostSpecies.val}}</p>
-    <p>Authority: {{host.hostAuthority.val}}</p>
-    <p>Taxonomic Order: {{host.hostTaxOrder.val}}</p>
-    <p>Genus: {{host.hostGenus.val}}</p>
-    <p>Sub Species: {{host.hostSubSpecies.val}}</p>
+    <table class="table table-striped table-hover">
+    <tr><td> Domestication Status </td> <td> {{host.domesticationStatus.val}} </td></tr>
+    <tr><td> Reported Name </td> <td> {{host.hostReportedName.val}} </td></tr>
+    <tr><td> Class </td> <td> {{host.hostClass.val}} </td></tr>
+    <tr><td> Family </td> <td> {{host.hostFamily.val}} </td></tr>
+    <tr><td> Species </td> <td> {{host.hostSpecies.val}} </td></tr>
+    <tr><td> Authority </td> <td> {{host.hostAuthority.val}} </td></tr>
+    <tr><td> Taxonomic Order </td> <td> {{host.hostTaxOrder.val}} </td></tr>
+    <tr><td> Genus </td> <td> {{host.hostGenus.val}} </td></tr>
+    <tr><td> Sub Species </td> <td> {{host.hostSubSpecies.val}} </td></tr>
+    </table>
   </div>
 
   <div id="tabs-6" class="tabhigh"> <!-- economics -->
-    <p>Age of Infected: {{economics.avgAgeInfected.val}}</p>
-    <p>Average Age of Death: {{economics.avgAgeDeath.val}}</p>
-    <p>Travel Restrictions: {{economics.tradeTravelRestrictions.val}}</p>
-    <p>Number Hospitalized: {{economics.numHospitalized.val}}</p>
-    <p>Cost per Treatment: {{economics.avgCostPerTreatment.val}}</p>
-    <p>per Capita GDP: US${{economics.perCapitaNatGDPEventYear.val}}</p>
-    <p>Average Life Expectancy at Time: {{economics.avgLifeExpectEventCountryYear.val}} years</p>
+    <table class="table table-striped table-hover">
+    <tr><td> Age of Infected </td> <td> {{economics.avgAgeInfected.val}} </td></tr>
+    <tr><td> Average Age of Death </td> <td> {{economics.avgAgeDeath.val}} </td></tr>
+    <tr><td> Travel Restrictions </td> <td> {{economics.tradeTravelRestrictions.val}} </td></tr>
+    <tr><td> Number Hospitalized </td> <td> {{economics.numHospitalized.val}} </td></tr>
+    <tr><td> Cost per Treatment </td> <td> {{economics.avgCostPerTreatment.val}} </td></tr>
+    <tr><td> per Capita GDP </td> <td> US${{economics.perCapitaNatGDPEventYear.val}} </td></tr>
+    <tr><td> Average Life Expectancy at Time </td> <td> {{economics.avgLifeExpectEventCountryYear.val}} years </td></tr>
+    </table>
   </div>
 
+
   <div id="tabs-7" class="tabhigh"> <!-- refs -->
-    <p> ... in progress </p>
+    <p>... in progress  </p>
   </div>
 
 </div>

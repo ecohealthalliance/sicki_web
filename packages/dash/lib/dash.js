@@ -3,7 +3,7 @@
 Template.dash.helpers({
 	isEID: function(){
 		/*console.log(this.eid.val)*/
-		if (this.eid.value == 1)
+		if (this.eid.val == 1)
 		 return true;
 	},
 	dataSlice: function(date, seq){
