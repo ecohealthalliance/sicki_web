@@ -1,7 +1,9 @@
 <template name="entriesList2">
   <div class="entries">
-    {{#each entries}}
-      {{> entryItem2}}
-    {{/each}}
+
+
+  	{{reactiveTable entries fields}}
+
+
   </div>
 </template>
