@@ -5,7 +5,6 @@
 		<div class="dash">
 			<div class="row">
 				<div class="col-md-12 eventHead">
-					<!--show ribbon if this is an eid event-->
 					{{#if isEID}}
 					<div style="float:left" class="ribbon-wrapper">
 						<div class="ribbon-front">
@@ -19,6 +18,7 @@
 						<div class="ribbon-back-right"></div>
 					</div>
 					{{/if}}
+					
 					<h2>  {{eventName.valQuote}} </h2>
 				</div>
 
@@ -34,10 +34,6 @@
 
 				<div class="col-md-4">
 					<div class="row" id="info">
-						
-						<div class="row">
-
-							
 							<div class="col-md-12">
 								<br />
 								<div class="row">
@@ -62,6 +58,11 @@
 								</div>
 							</div>
 						</div>
+
+
+
+						<div class="row">
+
 					</div>
 					<div class="row">
 						{{> mapOneTest}}
@@ -93,6 +94,7 @@
 					</h1>
 				</div>
 			</div>
+
 		</div>
 		{{/with}}
 	</div> 

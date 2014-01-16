@@ -4,10 +4,10 @@ Template.mapOneTest.rendered = function() {
 
   if (! self.handle) {
   	self.handle = Deps.autorun(function () {
-		/* Width */
-			var w = 600;
+			/* Width */
+			var w = 400;
 			/* Height */
-			var h = 300;
+			var h = 200;
 
 			/* Choose an event */
 			var eid = 200;
@@ -18,7 +18,7 @@ Template.mapOneTest.rendered = function() {
 			/* Map projection (mercator) */
 			var projection = d3.geo.mercator()
 								   .translate([w/2, h/2])
-								   .scale([100]);
+								   .scale([90]);
 
 			/* Generate path */
 			var path = d3.geo.path()
@@ -32,9 +32,9 @@ Template.mapOneTest.rendered = function() {
 						.attr("height", h);
 
 			/* Load GeoJSON */
-			d3.json("oceans.json", function(json) {
+			d3.json("/oceans.json", function(json) {
 
-				d3.json("centroids.json", function(eids) {
+				d3.json("/centroids.json", function(eids) {
 
 					for (var key in eids.features) {
 					   var obj = eids.features[key].properties;
