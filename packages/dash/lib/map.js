@@ -7,7 +7,7 @@ Template.map.rendered = function () {
       var radius = function (party) {
         /*return 10 + Math.sqrt(20) * 10;*/
         /*fix the ref for new schema */
-        return 10 + Math.sqrt(party.characteristics.numberOfDeaths.val) * 10;
+        return 10 + Math.sqrt(party.val.characteristics.numberOfDeaths.val) * 10;
       };
 
       // Draw a circle for each party
@@ -35,7 +35,7 @@ Template.map.rendered = function () {
       var updateLabels = function (group) {
         group.attr("id", function (party) { return party._id; })
         /*.text(function (party) {return 20 || '';})*/
-        .text(function (party) {return party.characteristics.numberOfDeaths.val || '';})
+        .text(function (party) {return party.val.characteristics.numberOfDeaths.val || '';})
         .attr("x", function (party) { return party.x * 300; })
         .attr("y", function (party) { return party.y * 300 + radius(party)/2 })
         .style('font-size', function (party) {
