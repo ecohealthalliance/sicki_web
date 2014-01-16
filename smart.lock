@@ -22,7 +22,8 @@
       "accounts-ui-bootstrap-dropdown": {},
       "reactive-table": {
         "path": "packages/reactive-table"
-      }
+      },
+      "collection-api": {}
     },
     "packages": {
       "iron-router": {
@@ -81,6 +82,11 @@
       },
       "reactive-table": {
         "path": "packages/reactive-table"
+      },
+      "collection-api": {
+        "git": "https://github.com/crazytoad/meteor-collectionapi.git",
+        "tag": "v0.1.15",
+        "commit": "b62c51f387287726cf3b64077f7bc69604ec2f5e"
       },
       "build-fetcher": {
         "git": "https://github.com/mizzao/meteor-build-fetcher.git",
