@@ -4,13 +4,13 @@ Template.mapOneTest.rendered = function() {
 
   if (! self.handle) {
   	self.handle = Deps.autorun(function () {
-/* Width */
+		/* Width */
 			var w = 600;
 			/* Height */
 			var h = 300;
 
 			/* Choose an event */
-			var eid = 20;
+			var eid = 200;
 
 			/* set outcome */
 			var deaths = 20;
@@ -26,7 +26,7 @@ Template.mapOneTest.rendered = function() {
 							 .pointRadius(Math.sqrt(parseInt(deaths) * 10));
 
 			/* create SVG element */
-			var svg = d3.select("body")
+			var svg = d3.select("#mapOne")
 						.append("svg")
 						.attr("width", w)
 						.attr("height", h);
@@ -45,7 +45,7 @@ Template.mapOneTest.rendered = function() {
 					      if(obj.hasOwnProperty(prop)){
 					        //console.log(prop + " = " + obj[prop]);
 					        if (obj[prop]== 'HED_'+ eid){
-					        	//console.log(eids.features[key])
+					        	console.log(eids.features[key])
 					        	json.features.push(eids.features[key])
 					        	break; // TODO fix this break
 					        }
@@ -54,24 +54,24 @@ Template.mapOneTest.rendered = function() {
 					}
 
 				
-				/* Bind data and create one path per GeoJSON feature */
-				svg.selectAll("path")
-				   .data(json.features)
-				   .enter()
-				   .append("path")
-				   .attr("d", path)
-				   .style("fill", function(d) {
-                        /* Identify data type */
-						var type = d.geometry.type;
-						if (type=='Point') {
-						/* If feature is a point make red */
-						    return "crimson"; 
-						} 
-						else {
-							/* If feature is a polygon make the ocean blue */
-							return "steelblue";
-						}
-					});
+					/* Bind data and create one path per GeoJSON feature */
+					svg.selectAll("path")
+					   .data(json.features)
+					   .enter()
+					   .append("path")
+					   .attr("d", path)
+					   .style("fill", function(d) {
+	                        /* Identify data type */
+							var type = d.geometry.type;
+							if (type=='Point') {
+							/* If feature is a point make red */
+							    return "crimson"; 
+							} 
+							else {
+								/* If feature is a polygon make the ocean blue */
+								return "steelblue";
+							}
+						});
 
 			});
 		});
