@@ -10,6 +10,11 @@ Package.on_use(function (api) {
 	api.add_files("lib/map.html", "client");
 	api.add_files("lib/map.css", "client");
 	api.add_files("lib/map.js", "client");
+	api.add_files("lib/map_one_test.html", "client");
+	api.add_files("lib/map_one_test.js", "client");
+	api.add_files("lib/map_all_test.html", "client");
+	api.add_files("lib/map_all_test.js", "client");
 	api.add_files("lib/soma.png", "client");
 	api.add_files("lib/timer.png", "client");
+
 });
