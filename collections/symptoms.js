@@ -1,0 +1,1 @@
+Symptoms = new Meteor.Collection('symptoms');

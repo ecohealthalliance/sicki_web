@@ -1,0 +1,70 @@
+<template name="resourcesPage">
+  <div class="container">
+
+	<h2> Sicki Resources Page </h2>
+
+	<p><a class="btn btn-lg btn-primary" href="{{pathFor 'ascendingDiseases'}}" role="button">Disease Glossary</a>
+
+	<a class="btn btn-lg btn-primary" href="{{pathFor 'ascendingSymptoms'}}" role="button">Symptom Glossary</a></p>
+
+	<div class="row">
+			<div id="demo2">
+
+				<div class="col-md-6">
+					<h2>Disease Glossary</h2>
+					<div id="listTwo-nav" class="listNav"></div>
+
+					<ul id="listTwo" class="demoTwo squareList demo">
+						{{> diseasesList}}
+					</ul>
+				</div>
+
+
+				<div class="col-md-6">
+					<h2>Symptom Glossary</h2>
+					<div id="listThree-nav" class="listNav"></div>
+
+					<ul id="listThree" class="demoTwo squareList demo">
+						{{> symptomsList}}
+					</ul>
+				</div>
+			</div>
+	</div>
+
+	<div class="row">
+			<div id="demo4">
+				<div id="listWrapper">
+					
+				<div class="col-md-12">
+					<h2>Disease Glossary</h2>
+					<div id="demoFour-nav" class="listNav"></div>
+
+					<ul id="demoFour" class="demo">
+						{{> diseasesList}}
+					</ul>
+				</div>
+
+
+			</div>
+	</div>
+
+		<div class="row">
+			<div id="demo4">
+				<div id="listWrapper">
+					
+				<div class="col-md-12">
+					<h2>Symptom Glossary</h2>
+					<div id="demoFour-nav" class="listNav"></div>
+
+					<ul id="demoFour" class="demo">
+						{{> symptomsList}}
+					</ul>
+				</div>
+
+
+			</div>
+	</div>
+
+
+  </div>
+ </template>

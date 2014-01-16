@@ -25,3 +25,11 @@ Meteor.publish('notifications', function() {
 Meteor.publish('references', function(options) {
   return References.find({}, options);
 });
+
+Meteor.publish('diseases', function(options) {
+  return Diseases.find({}, options);
+});
+
+Meteor.publish('symptoms', function(options) {
+  return Symptoms.find({}, options);
+});
