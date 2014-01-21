@@ -47,7 +47,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -70,7 +70,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -92,7 +92,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -113,7 +113,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : '2014-01-15T19:32:39.451Z',
+        "submitted" : "2014-01-16T22:40:53.823Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -123,7 +123,7 @@ var sickiOneId = Entries.insert({
       },
       "valQuote" : "non-zoonotic",
       "ref" : [ ],
-      "val" : ""
+      "val" : "non-zoonotic"
     },
     "contacts" : {
       "firstName" : "",
@@ -137,7 +137,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : '2014-01-15T19:32:39.451Z',
+        "submitted" : "2014-01-16T22:40:53.823Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -161,7 +161,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : '2014-01-15T19:32:39.451Z',
+        "submitted" : "2014-01-16T22:40:53.823Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -182,7 +182,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : '2014-01-15T19:32:39.451Z',
+        "submitted" : "2014-01-16T22:40:53.823Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -192,7 +192,7 @@ var sickiOneId = Entries.insert({
       },
       "valQuote" : "human susceptibility to infection, antimicrobial agent use",
       "ref" : [ ],
-      "val" : ""
+      "val" : "Human susceptibility to infection"
     },
     "abstract" : {
       "refBlob" : "512",
@@ -203,7 +203,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : '2014-01-15T19:32:39.451Z',
+        "submitted" : "2014-01-16T22:40:53.823Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -225,7 +225,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -246,7 +246,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -267,7 +267,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -288,7 +288,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -309,7 +309,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -330,7 +330,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -351,7 +351,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -373,7 +373,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : '2014-01-15T19:32:39.451Z',
+        "submitted" : "2014-01-16T22:40:53.823Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -383,9 +383,11 @@ var sickiOneId = Entries.insert({
       },
       "valQuote" : "There were five different primary initial sites of isolation of GRAB in the 45 cases: sputum or other respiratory tract specimen (including bronchial alveolar lavage) (35 cases=77%); wounds (five cases=11%); central venous catheter tips (three cases=6%); blood (one case=2%); and urine (one case=2%).",
       "ref" : [ ],
-      "val" : ""
+      "val" : "Serology"
     },
     "disease" : {
+      "val" : "",
+      "icd10" : "",
       "refBlob" : "512",
       "meta" : {
         "reviewer" : "eha",
@@ -394,7 +396,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : '2014-01-15T19:32:39.451Z',
+        "submitted" : "2014-01-16T22:40:53.823Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -403,8 +405,7 @@ var sickiOneId = Entries.insert({
         }
       },
       "valQuote" : "\"Among 45 cases...27 cases met the CDC criteria for infection..pneumonia (74%), bacteremia (7%), CVC related infections (22%), empyema (4%), urinary tract infection (11%), and wound infection (4%)\"",
-      "ref" : [ ],
-      "val" : ""
+      "ref" : [ ]
     },
     "locations" : {
       "placeName" : {
@@ -416,7 +417,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -437,7 +438,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -458,7 +459,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -479,7 +480,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -500,7 +501,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -521,7 +522,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -542,7 +543,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -563,7 +564,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -577,7 +578,7 @@ var sickiOneId = Entries.insert({
       }
     },
     "eventName" : {
-      "refBlob" : "Jones et al. SI",
+      "refBlob" : "jones",
       "meta" : {
         "reviewer" : "eha",
         "votes" : {
@@ -585,7 +586,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : '2014-01-15T19:32:39.451Z',
+        "submitted" : "2014-01-16T22:40:53.823Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -606,7 +607,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : '2014-01-15T19:32:39.451Z',
+        "submitted" : "2014-01-16T22:40:53.823Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -616,7 +617,7 @@ var sickiOneId = Entries.insert({
       },
       "valQuote" : "close: \"Carriage of GRAB on staff hands was demonstrated as the most likely source of infection.\"",
       "ref" : [ ],
-      "val" : ""
+      "val" : "close"
     },
     "hosts" : {
       "hostUse" : {
@@ -628,7 +629,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -649,7 +650,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -670,7 +671,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -691,7 +692,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -712,7 +713,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -733,7 +734,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -754,7 +755,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -775,7 +776,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -796,7 +797,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -806,7 +807,7 @@ var sickiOneId = Entries.insert({
         },
         "valQuote" : "average 51 yr",
         "ref" : [ ],
-        "val" : ""
+        "val" : "adult"
       },
       "subSpecies" : {
         "refBlob" : "",
@@ -817,7 +818,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -838,7 +839,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -859,7 +860,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -881,7 +882,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : '2014-01-15T19:32:39.451Z',
+        "submitted" : "2014-01-16T22:40:53.823Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -903,7 +904,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -913,7 +914,7 @@ var sickiOneId = Entries.insert({
         },
         "valQuote" : "45",
         "ref" : [ ],
-        "val" : ""
+        "val" : "45"
       },
       "symptomsReported" : {
         "refBlob" : "512",
@@ -924,7 +925,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -934,7 +935,7 @@ var sickiOneId = Entries.insert({
         },
         "valQuote" : "no symptoms- just confirmed isolate of bacteria",
         "ref" : [ ],
-        "val" : ""
+        "val" : "none"
       },
       "numberOfDeaths" : {
         "refBlob" : "512",
@@ -945,7 +946,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -955,7 +956,7 @@ var sickiOneId = Entries.insert({
         },
         "valQuote" : "0",
         "ref" : [ ],
-        "val" : ""
+        "val" : "0"
       },
       "prevalence" : {
         "refBlob" : "512",
@@ -966,7 +967,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -989,7 +990,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -1010,7 +1011,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -1031,7 +1032,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -1052,7 +1053,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -1073,7 +1074,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -1094,7 +1095,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -1115,7 +1116,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -1136,7 +1137,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -1157,7 +1158,7 @@ var sickiOneId = Entries.insert({
             "up" : 0
           },
           "userId" : 0,
-          "submitted" : '2014-01-15T19:32:39.451Z',
+          "submitted" : "2014-01-16T22:40:53.823Z",
           "rank" : {
             "auto" : false,
             "top" : true,
@@ -1179,7 +1180,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : '2014-01-15T19:32:39.451Z',
+        "submitted" : "2014-01-16T22:40:53.823Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -1199,7 +1200,7 @@ var sickiOneId = Entries.insert({
           "up" : 0
         },
         "userId" : 0,
-        "submitted" : '2014-01-15T19:32:39.451Z',
+        "submitted" : "2014-01-16T22:40:53.823Z",
         "rank" : {
           "auto" : false,
           "top" : true,
@@ -1221,7 +1222,7 @@ var sickiOneId = Entries.insert({
       "up" : 0
     },
     "userId" : 0,
-    "submitted" : "2014-01-15T19:32:39.457Z",
+    "submitted" : "2014-01-16T22:40:53.861Z",
     "rank" : {
       "auto" : false,
       "top" : true,
@@ -1233,6 +1234,8 @@ var sickiOneId = Entries.insert({
     
   },
   "commentsCount" : 0
+
+
   });
 
   Comments.insert({
