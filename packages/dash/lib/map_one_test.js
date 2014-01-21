@@ -7,18 +7,23 @@ Template.mapOneTest.rendered = function() {
 			/* Width */
 			var w = 400;
 			/* Height */
-			var h = 200;
+			var h = 235;
 
 			/* Choose an event */
-			var eid = 200;
+			var eid = parseInt(self.data.sickiID.valQuote, 10);
 
 			/* set outcome */
 			var deaths = 20;
+			try {
+				deaths = parseInt(self.data.characteristics.numberOfDeaths.val, 10) || 20;
+			} catch (e) {
+				// no number of deaths
+			}
 
 			/* Map projection (mercator) */
 			var projection = d3.geo.mercator()
 								   .translate([w/2, h/2])
-								   .scale([90]);
+								   .scale([70]);
 
 			/* Generate path */
 			var path = d3.geo.path()

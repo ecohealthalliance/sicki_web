@@ -26,7 +26,7 @@ Template.mapAllTest.rendered = function() {
 							 .pointRadius(Math.sqrt(parseInt(deaths) * 10));
 
 			/* create SVG element */
-			var svg = d3.select("body")
+			var svg = d3.select("#mapAll")
 						.append("svg")
 						.attr("width", w)
 						.attr("height", h);

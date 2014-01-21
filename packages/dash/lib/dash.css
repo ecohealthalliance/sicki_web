@@ -5,6 +5,7 @@
 .tabhigh {
 	height: 480px;
 	overflow: scroll;
+	font-size: 150%;
 }
 
 .eventHead {
