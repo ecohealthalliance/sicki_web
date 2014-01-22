@@ -75,6 +75,17 @@
 				</div>
 			</div>
 
+		{{/with}}
+
+			<div class="row">
+				
+						{{#each refLink}}
+                          {{> referencesListItem}}
+                        {{/each}} 
+
+			</div>
+
+		{{#with val}}
 			<div class="row">
 				<div class="col-md-1 vertime">
 					<h1>

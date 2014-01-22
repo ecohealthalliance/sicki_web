@@ -9,10 +9,10 @@ Template.outbreaksList.helpers({
         key: 'val.eventName.valQuote',
         label: 'EventName'
       }, {
-        key: 'val.dates.startDate.valQuote',
+        key: 'val.dates.startDate.valForm',
         label: 'Start Date'
       }, {
-        key: 'val.dates.endDate.valQuote',
+        key: 'val.dates.endDate.valForm',
         label: 'End Date'
       }
     ];

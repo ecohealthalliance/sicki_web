@@ -10,5 +10,24 @@ Template.dash.helpers({
 		console.log(date)
 		year = date.substring(0,4)
 		return year[seq];
-	}
+	},
+	refLink: function(){
+	    console.log(this.refs)
+	    console.log(References.find({rights: {$in:this.refs}}))
+	    return References.find({rights: {$in:this.refs}});
+    },
+    fields: function() {
+    return [
+      {
+        key: 'id',
+        label: 'ID'
+      }, {
+        key: 'title',
+        label: 'Title'
+      }, {
+        key: 'container-title',
+        label: 'Journal'
+      }
+    ];
+  }
 });

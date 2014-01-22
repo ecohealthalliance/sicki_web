@@ -3,4 +3,5 @@
 Meteor.subscribe('diseases');
 Meteor.subscribe('symptoms');
 Meteor.subscribe('entries');
+Meteor.subscribe('references');
 

@@ -17,13 +17,13 @@ Template.referencesList.helpers({
   fields: function() {
     return [
       {
-        key: 'id',
-        label: 'ID'
+        key: 'date',
+        label: 'Date'
       }, {
         key: 'title',
         label: 'Title'
       }, {
-        key: 'container-title',
+        key: 'publicationTitle',
         label: 'Journal'
       }
     ];

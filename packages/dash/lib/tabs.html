@@ -4,8 +4,10 @@
   <ul>
     <li><a href="#tabs-1">Abstract</a></li>
     <li><a href="#tabs-2">Stats</a></li>
-    <li><a href="#tabs-3">Symptoms</a></li>
-    <li><a href="#tabs-7">Refs</a></li>
+    <li><a href="#tabs-3">Agent</a></li>
+    <li><a href="#tabs-4">Location</a></li>
+    <li><a href="#tabs-5">Host</a></li>
+
   </ul>
   
   <div id="tabs-1" class="tabhigh"> <!-- abstract -->
@@ -16,28 +18,60 @@
     <table class="table table-striped table-hover">
     <tr><td> Start Date </td> <td> {{dates.startDate.valForm}}</td></tr>
     <tr><td> End Date </td> <td> {{dates.endDate.valForm}} </td></tr>
-    <tr><td> Host Age </td> <td> {{hosts.age.val}} </td></tr>
-    <tr><td> Host Use </td> <td> {{hosts.use.val}} </td></tr>
-    <tr><td> Transition Model </td> <td> {{transitionModel.val}} </td></tr>
+    <tr><td> Host Age </td> <td> {{hosts.age.valQuote}} </td></tr>
+    <tr><td> Host Use </td> <td> {{hosts.use.valQuote}} </td></tr>
+    <tr><td> Transmission Model </td> <td> {{transitionModel.valQuote}} </td></tr>
     <tr><td> Zoonotic Type </td> <td> {{zoonoticType.val}} </td></tr>
-    <tr><td> Number Infected </td> <td> {{characteristics.numberInfected.val}} </td></tr>
-    <tr><td> Prevalence </td> <td> {{characteristics.prevalence.val}} </td></tr>
-    <tr><td> Duration </td> <td> {{dates.duration.val}} </td></tr>
-    <tr><td> Host Sex </td> <td> {{hosts.hostSex.val}} </td></tr>
-    <tr><td> Sample Type </td> <td> {{sampleType.val}} </td></tr>
+    <tr><td> Prevalence </td> <td> {{characteristics.prevalence.valQuote}} </td></tr>
+    <tr><td> Duration </td> <td> {{dates.duration.valQuote}} </td></tr>
+    <tr><td> Host Sex </td> <td> {{hosts.hostSex.valQuote}} </td></tr>
+    <tr><td> Sample Type </td> <td> {{sampleType.valQuote}} </td></tr>
     <tr><td> Driver </td> <td> {{driver.val}} </td></tr>
-    <tr><td> EID Category </td> <td> {{eidCategory.val}} </td></tr>
+    <tr><td> EID Category </td> <td> {{eidCategory.Quote}} </td></tr>
     </table>
   </div>
 
-  <div id="tabs-3" class="tabhigh">
-    {{characteristics.symptomsReported.val}}
+<div id="tabs-3" class="tabhigh"> <!-- agent -->
+    <table class="table table-striped table-hover">
+    <tr><td> Drug Resistance </td> <td> {{pathogens.pathogenDrugResistance.valQuote}} </td></tr>
+    <tr><td> Reported Name </td> <td> {{pathogens.pathogenReportedName.valQuote}} </td></tr>
+    <tr><td> Class </td> <td> {{pathogens.pathogenClass.valQuote}} </td></tr>
+    <tr><td> Family </td> <td> {{pathogens.pathogenFamily.valQuote}} </td></tr>
+    <tr><td> Species </td> <td> {{pathogens.pathogenSpecies.valQuote}} </td></tr>
+    <tr><td> Authority </td> <td> {{pathogens.pathogenAuthority.valQuote}} </td></tr>
+    <tr><td> Taxonomic Order </td> <td> {{pathogens.pathogenTaxOrder.valQuote}} </td></tr>
+    <tr><td> Genus </td> <td> {{pathogens.pathogenGenus.valQuote}} </td></tr>
+    <tr><td> Sub Species </td> <td> {{pathogens.pathogenSubSpecies.valQuote}} </td></tr>
+    </table>
   </div>
 
-
-  <div id="tabs-7" class="tabhigh"> <!-- refs -->
-    <p>... in progress  </p>
+  <div id="tabs-4" class="tabhigh"> <!-- location -->
+    <table class="table table-striped table-hover">
+    <tr><td> Location Name </td> <td> {{location.locationLocationName.valQuote}} </td></tr>
+    <tr><td> Place Name </td> <td> {{location.locationPlaceName.valQuote}} </td></tr>
+    <tr><td> Latitude </td> <td> {{location.locationLatitude.valQuote}} </td></tr>
+    <tr><td> Longitute </td> <td> {{location.locationLongitude.valQuote}} </td></tr>
+    <tr><td> City </td> <td> {{location.locationCity.valQuote}} </td></tr>
+    <tr><td> Subnational Region </td> <td> {{location.locationSubnationalRegion.valQuote}} </td></tr>
+    <tr><td> Nation </td> <td> {{location.locationNation.valQuote}} </td></tr>
+    <tr><td> Continent </td> <td> {{location.locationContinent.valQuote}} </td></tr>
+    </table>
   </div>
+
+  <div id="tabs-5" class="tabhigh"> <!-- host -->
+    <table class="table table-striped table-hover">
+    <tr><td> Domestication Status </td> <td> {{host.domesticationStatus.valQuote}} </td></tr>
+    <tr><td> Reported Name </td> <td> {{host.hostReportedName.valQuote}} </td></tr>
+    <tr><td> Class </td> <td> {{host.hostClass.valQuote}} </td></tr>
+    <tr><td> Family </td> <td> {{host.hostFamily.valQuote}} </td></tr>
+    <tr><td> Species </td> <td> {{host.hostSpecies.valQuote}} </td></tr>
+    <tr><td> Authority </td> <td> {{host.hostAuthority.valQuote}} </td></tr>
+    <tr><td> Taxonomic Order </td> <td> {{host.hostTaxOrder.valQuote}} </td></tr>
+    <tr><td> Genus </td> <td> {{host.hostGenus.valQuote}} </td></tr>
+    <tr><td> Sub Species </td> <td> {{host.hostSubSpecies.valQuote}} </td></tr>
+    </table>
+  </div>
+
 
 </div>
 </template>
