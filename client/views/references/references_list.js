@@ -16,16 +16,30 @@ Template.referencesList.helpers({
   },
   fields: function() {
     return [
-      {
-        key: 'date',
-        label: 'Date'
-      }, {
-        key: 'title',
-        label: 'Title'
-      }, {
-        key: 'publicationTitle',
-        label: 'Journal'
-      }
+    {
+      key: 'date',
+      label: 'Date'
+    }, {
+      key: 'title',
+      label: 'Title'
+    }, {
+      key: 'publicationTitle',
+      label: 'Journal'
+    }
     ];
+  },
+  attrs: function() {
+    return {reference: '_id'}
+  }
+});
+
+
+Template.referencesList.events({
+  'click #references-table tbody tr': function(event) {
+    var refId;
+    refId = $(event.currentTarget).attr('reference');
+    return Router.go('referenceView', {
+      _id: refId
+    });
   }
 });

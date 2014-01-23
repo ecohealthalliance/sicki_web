@@ -43,8 +43,8 @@ var sickiOneId = Entries.insert({
         "meta" : {
           "reviewer" : "eha",
           "votes" : {
-            "down" : 0,
-            "up" : 0
+            "down" : 2,
+            "up" : 12
           },
           "userId" : 0,
           "submitted" : "2014-01-16T22:40:53.823Z",

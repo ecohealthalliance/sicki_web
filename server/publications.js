@@ -26,6 +26,10 @@ Meteor.publish('references', function(options) {
   return References.find({}, options);
 });
 
+Meteor.publish('singleReference', function(id) {
+  return id && References.find(id);
+});
+
 Meteor.publish('diseases', function(options) {
   return Diseases.find({}, options);
 });
