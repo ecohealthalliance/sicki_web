@@ -15,7 +15,7 @@ Template.mapOneTest.rendered = function() {
 			/* set outcome */
 			var deaths = 20;
 			try {
-				deaths = parseInt(self.data.characteristics.numberOfDeaths.val, 10) || 20;
+				deaths = parseInt(self.data.characteristics.numberOfDeaths.val, 10) || 2;
 			} catch (e) {
 				// no number of deaths
 			}
@@ -28,7 +28,7 @@ Template.mapOneTest.rendered = function() {
 			/* Generate path */
 			var path = d3.geo.path()
 							 .projection(projection)
-							 .pointRadius(Math.sqrt(parseInt(deaths) * 10));
+							 .pointRadius(Math.sqrt(parseInt(deaths) * 4));
 
 			/* create SVG element */
 			var svg = d3.select("#mapOne")

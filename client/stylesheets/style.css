@@ -7,7 +7,8 @@ p {
 }
 
 .grid-block, .main, .entry, .comments li, .comment-form {
-  background: #4682B4; /*steelblue*/
+  /*background: #4682B4; */ /*steelblue*/
+  background: #ecf0f1; /* jumbotron */
   /*background: #B0C4DE; */ /*light steelblue*/
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -62,4 +63,8 @@ p {
     display: block;
     float: right;
     margin-top: 7px;
+}
+
+.tabs td {
+    text-transform: capitalize;
 }

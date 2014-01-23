@@ -1,13 +1,14 @@
 <template name="tabPage">
 
-<div id="tabs">
+<div id="tabs" class="tabs">
   <ul>
     <li><a href="#tabs-1">Abstract</a></li>
     <li><a href="#tabs-2">Stats</a></li>
+    {{#if currentUser}}
     <li><a href="#tabs-3">Agent</a></li>
     <li><a href="#tabs-4">Location</a></li>
     <li><a href="#tabs-5">Host</a></li>
-
+    {{/if}}
   </ul>
   
   <div id="tabs-1" class="tabhigh"> <!-- abstract -->
@@ -18,60 +19,61 @@
     <table class="table table-striped table-hover">
     <tr><td> Start Date </td> <td> {{dates.startDate.valForm}}</td></tr>
     <tr><td> End Date </td> <td> {{dates.endDate.valForm}} </td></tr>
-    <tr><td> Host Age </td> <td> {{hosts.age.valQuote}} </td></tr>
-    <tr><td> Host Use </td> <td> {{hosts.use.valQuote}} </td></tr>
-    <tr><td> Transmission Model </td> <td> {{transitionModel.valQuote}} </td></tr>
+    <tr><td> Transmission Model </td> <td> {{transmissionModel.val}} </td></tr>
     <tr><td> Zoonotic Type </td> <td> {{zoonoticType.val}} </td></tr>
     <tr><td> Prevalence </td> <td> {{characteristics.prevalence.valQuote}} </td></tr>
     <tr><td> Duration </td> <td> {{dates.duration.valQuote}} </td></tr>
-    <tr><td> Host Sex </td> <td> {{hosts.hostSex.valQuote}} </td></tr>
     <tr><td> Sample Type </td> <td> {{sampleType.valQuote}} </td></tr>
     <tr><td> Driver </td> <td> {{driver.val}} </td></tr>
     <tr><td> EID Category </td> <td> {{eidCategory.Quote}} </td></tr>
     </table>
   </div>
 
+{{#if currentUser}}
 <div id="tabs-3" class="tabhigh"> <!-- agent -->
     <table class="table table-striped table-hover">
     <tr><td> Drug Resistance </td> <td> {{pathogens.pathogenDrugResistance.valQuote}} </td></tr>
-    <tr><td> Reported Name </td> <td> {{pathogens.pathogenReportedName.valQuote}} </td></tr>
-    <tr><td> Class </td> <td> {{pathogens.pathogenClass.valQuote}} </td></tr>
-    <tr><td> Family </td> <td> {{pathogens.pathogenFamily.valQuote}} </td></tr>
-    <tr><td> Species </td> <td> {{pathogens.pathogenSpecies.valQuote}} </td></tr>
-    <tr><td> Authority </td> <td> {{pathogens.pathogenAuthority.valQuote}} </td></tr>
-    <tr><td> Taxonomic Order </td> <td> {{pathogens.pathogenTaxOrder.valQuote}} </td></tr>
-    <tr><td> Genus </td> <td> {{pathogens.pathogenGenus.valQuote}} </td></tr>
-    <tr><td> Sub Species </td> <td> {{pathogens.pathogenSubSpecies.valQuote}} </td></tr>
+    <tr><td> Reported Name </td> <td> {{pathogens.reportedName.valQuote}} </td></tr>
+    <tr><td> Class </td> <td> {{pathogens.class.valQuote}} </td></tr>
+    <tr><td> Family </td> <td> {{pathogens.family.valQuote}} </td></tr>
+    <tr><td> Species </td> <td> {{pathogens.species.valQuote}} </td></tr>
+    <tr><td> Authority </td> <td> {{pathogens.authority.valQuote}} </td></tr>
+    <tr><td> Taxonomic Order </td> <td> {{pathogens.taxOrder.valQuote}} </td></tr>
+    <tr><td> Genus </td> <td> {{pathogens.genus.valQuote}} </td></tr>
+    <tr><td> Sub Species </td> <td> {{pathogens.subSpecies.valQuote}} </td></tr>
     </table>
   </div>
 
   <div id="tabs-4" class="tabhigh"> <!-- location -->
     <table class="table table-striped table-hover">
-    <tr><td> Location Name </td> <td> {{location.locationLocationName.valQuote}} </td></tr>
-    <tr><td> Place Name </td> <td> {{location.locationPlaceName.valQuote}} </td></tr>
-    <tr><td> Latitude </td> <td> {{location.locationLatitude.valQuote}} </td></tr>
-    <tr><td> Longitute </td> <td> {{location.locationLongitude.valQuote}} </td></tr>
-    <tr><td> City </td> <td> {{location.locationCity.valQuote}} </td></tr>
-    <tr><td> Subnational Region </td> <td> {{location.locationSubnationalRegion.valQuote}} </td></tr>
-    <tr><td> Nation </td> <td> {{location.locationNation.valQuote}} </td></tr>
-    <tr><td> Continent </td> <td> {{location.locationContinent.valQuote}} </td></tr>
+    <tr><td> Location Name </td> <td> {{locations.locationName.valQuote}} </td></tr>
+    <tr><td> Place Name </td> <td> {{locations.placeName.valQuote}} </td></tr>
+    <tr><td> Latitude </td> <td> {{locations.latitude.valQuote}} </td></tr>
+    <tr><td> Longitute </td> <td> {{locations.longitude.valQuote}} </td></tr>
+    <tr><td> City </td> <td> {{locations.city.valQuote}} </td></tr>
+    <tr><td> Subnational Region </td> <td> {{locations.subnationalRegion.valQuote}} </td></tr>
+    <tr><td> Nation </td> <td> {{locations.nation.valQuote}} </td></tr>
+    <tr><td> Continent </td> <td> {{locations.continent.valQuote}} </td></tr>
     </table>
   </div>
 
   <div id="tabs-5" class="tabhigh"> <!-- host -->
     <table class="table table-striped table-hover">
-    <tr><td> Domestication Status </td> <td> {{host.domesticationStatus.valQuote}} </td></tr>
-    <tr><td> Reported Name </td> <td> {{host.hostReportedName.valQuote}} </td></tr>
-    <tr><td> Class </td> <td> {{host.hostClass.valQuote}} </td></tr>
-    <tr><td> Family </td> <td> {{host.hostFamily.valQuote}} </td></tr>
-    <tr><td> Species </td> <td> {{host.hostSpecies.valQuote}} </td></tr>
-    <tr><td> Authority </td> <td> {{host.hostAuthority.valQuote}} </td></tr>
-    <tr><td> Taxonomic Order </td> <td> {{host.hostTaxOrder.valQuote}} </td></tr>
-    <tr><td> Genus </td> <td> {{host.hostGenus.valQuote}} </td></tr>
-    <tr><td> Sub Species </td> <td> {{host.hostSubSpecies.valQuote}} </td></tr>
+    <tr><td> Domestication Status </td> <td> {{hosts.domesticationStatus.valQuote}} </td></tr>
+    <tr><td> Host Age </td> <td> {{hosts.age.val}} </td></tr>
+    <tr><td> Host Sex </td> <td> {{hosts.sex.valQuote}} </td></tr>
+    <tr><td> Host Use </td> <td> {{hosts.hostUse.valQuote}} </td></tr>
+    <tr><td> Reported Name </td> <td> {{hosts.reportedName.valQuote}} </td></tr>
+    <tr><td> Class </td> <td> {{hosts.class.valQuote}} </td></tr>
+    <tr><td> Family </td> <td> {{hosts.family.valQuote}} </td></tr>
+    <tr><td> Species </td> <td> {{hosts.species.valQuote}} </td></tr>
+    <tr><td> Authority </td> <td> {{hosts.authority.valQuote}} </td></tr>
+    <tr><td> Taxonomic Order </td> <td> {{hosts.taxOrder.valQuote}} </td></tr>
+    <tr><td> Genus </td> <td> {{hosts.genus.valQuote}} </td></tr>
+    <tr><td> Sub Species </td> <td> {{hosts.subSpecies.valQuote}} </td></tr>
     </table>
   </div>
-
+{{/if}}
 
 </div>
 </template>
