@@ -402,7 +402,8 @@ var sickiOneId = Entries.insert({
           "top" : true,
           "expert" : false,
           "eha" : true
-        }
+        },
+        "source": 'grits'
       },
       "valQuote" : "\"Among 45 cases...27 cases met the CDC criteria for infection..pneumonia (74%), bacteremia (7%), CVC related infections (22%), empyema (4%), urinary tract infection (11%), and wound infection (4%)\"",
       "ref" : [ ]

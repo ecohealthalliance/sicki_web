@@ -1,9 +1,10 @@
 <template name="dash">
 	<div class="container">
 
-		{{#with val}}
+		
 		<div class="dash">
 			<div class="row">
+				{{#with val}}
 				<div class="col-md-12 eventHead">
 					{{#if isEID}}
 					<div style="float:left" class="ribbon-wrapper">
@@ -21,99 +22,82 @@
 					
 					<h2>  {{eventName.valQuote}} </h2>
 				</div>
+				{{/with}}
 
 			</div>
 
-
 			<div class="row">
 				
-				<div class="facto col-md-1">
-					<h3 class="rotate">Fact Sheet</h3>
+				<div  class="col-md-1 facto">
+					
+						<h3 class="rotate">Fact Sheet</h3>
+					
 				</div>
 				
-
-				<div class="col-md-4">
-					<div class="row" id="info">
-							<div class="col-md-12">
-								<br />
-								<div class="row">
-									<h2 class="label"> Disease: </h2>
-									<h2 class="value"> 
-										{{#if disease.val}}
+				<div class="col-md-11">
+					<div class="row">
+						{{#with val}}
+						<div class="col-md-4">
+							<div class="row" id="info">
+								<div class="col-md-12">
+									<br />
+									<div class="row">
+										<h2 class="label"> Disease: </h2>
+										<h2 class="value"> 
+											{{#if disease.val}}
 											{{disease.val}}
-										{{else}}
+											{{else}}
 											{{disease.valQuote}}
-										{{/if}} 
-									</h2>
-								</div>
-								
-								<div class="row">
-									<h2 class="label"> ICD-10: </h2>
-									<h2 class="value"> 
-										{{disease.icd10}}
-									</h2>
-								</div>
+											{{/if}} 
+										</h2>
+									</div>
 
-								<div class="row">
-									<h2 class="label"> Infected: </h2>
-									<h2 class="value"> {{characteristics.numberInfected.val}} </h2>
-								</div>
+									<div class="row">
+										<h2 class="label"> ICD-10: </h2>
+										<h2 class="value"> 
+											{{disease.icd10}}
+										</h2>
+									</div>
 
-								<div class="row">
-									<h2 class="label"> Deaths: </h2>
-									<h2 class="value"> {{characteristics.numberOfDeaths.val}} </h2>
+									<div class="row">
+										<h2 class="label"> Infected: </h2>
+										<h2 class="value"> {{characteristics.numberInfected.val}} </h2>
+									</div>
+
+									<div class="row">
+										<h2 class="label"> Deaths: </h2>
+										<h2 class="value"> {{characteristics.numberOfDeaths.val}} </h2>
+									</div>
 								</div>
+							</div>
+
+
+
+							<div class="row">
+
+							</div>
+							<div class="row">
+								{{> mapOneTest}}
 							</div>
 						</div>
 
 
-
-						<div class="row">
-
+						<div class="col-md-7">
+							{{> tabPage}}
+						</div>
+					{{/with}}
 					</div>
+
+					
+
 					<div class="row">
-						{{> mapOneTest}}
+						<h2> References </h2>	
+						{{> referencesPlugin}}
 					</div>
+
 				</div>
-
-
-				<div class="col-md-7">
-					{{> tabPage}}
-				</div>
-			</div>
-
-		{{/with}}
-
-			<div class="row">
-				
-						{{#each refLink}}
-                          {{> referencesListItem}}
-                        {{/each}}
 
 			</div>
 
-		{{#with val}}
-			<div class="row">
-				<div class="col-md-1 vertime">
-					<h1>
-					{{dataSlice dates.startDate.valForm 0}}<br/> 
-					{{dataSlice dates.startDate.valForm 1}}<br/> 
-					{{dataSlice dates.startDate.valForm 2}}<br/> 
-					{{dataSlice dates.startDate.valForm 3}}
-					</h1>
-				</div>
-				<div class="col-md-10"><img src="/packages/dash/lib/timer.png" /></div>
-				<div class="col-md-1 vertime">
-					<h1>
-					{{dataSlice dates.endDate.valForm 0}}<br/> 
-					{{dataSlice dates.endDate.valForm 1}}<br/> 
-					{{dataSlice dates.endDate.valForm 2}}<br/> 
-					{{dataSlice dates.endDate.valForm 3}}
-					</h1>
-				</div>
-			</div>
-
-		</div>
-		{{/with}}
-	</div> 
-</template>
+		</div> 
+	</template>

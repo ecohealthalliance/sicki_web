@@ -1,6 +1,21 @@
 <template name="referenceView">
   <div class="entry">
+
+	<p style="float:left;"><i> {{publicationTitle}} </i></p>
+	<p style="float:right;"> Volume: {{volume}} | Date: {{date}} | DOI: {{DOI}} </p>
+	
+  	<h1 style="clear:both;"> ARTICLE </h1>
+
+  	<hr>
+
 	<h2>{{title}}</h2>
+
+	<h3>
+		{{#each creators}}
+			{{lastName}}, {{firstName}} &nbsp;
+		{{/each}}
+	</h3>
+
 	<p>{{abstractNote}}</p>
   </div>
 </template>

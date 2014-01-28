@@ -12,8 +12,8 @@ Template.dash.helpers({
 		return year[seq];
 	},
 	refLink: function(){
-	    console.log(this.refs)
-	    console.log(References.find({rights: {$in:this.refs}}))
+	    /*console.log(this.refs)
+	    console.log(References.find({rights: {$in:this.refs}}).count())*/
 	    return References.find({rights: {$in:this.refs}});
     },
     fields: function() {
