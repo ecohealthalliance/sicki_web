@@ -1,10 +1,13 @@
 <template name="homePage">
     <div class="jumbotron">
       <div class="container">
-        <h1> The Sicki Project </h1>
-        <h2> Web Encyclopedia of Emerging Infectious Diseases (EIDs) </h2>
-        <p> Sicki curates resources and data related to global EID events from 1940 to present. This web platform is developed and maintained by EcoHealth Alliance in New York City, USA. </p>
-        <p><a class="btn btn-primary btn-lg" href="{{pathFor 'aboutPage'}}" role="button">Learn more &raquo;</a></p>
+        <span>
+        <img src="grid_logo_inverse.png" align="left" style="padding-top:15px;"></img>
+        <h1> EcoHealth GRID </h1>
+        <h2> Global Repository of Infectious Disease Data</h2>
+        <p> Resources and data related to global Infectious Disease (ID) events from 1940 to present. This web platform is developed and maintained by EcoHealth Alliance in New York City, USA. </p>
+        </span>
+        <p style="text-align: center;" ><a class="btn btn-primary btn-lg" href="{{pathFor 'aboutPage'}}" role="button">Learn more &raquo;</a></p>
       </div>
     </div>
 
@@ -13,18 +16,18 @@
       <div class="row">
 
         <div class="col-md-4">
-          <h2>EID Events</h2>
-          <p>Collection of EID events from 1940 to present. Includes a summary, narrative, media collection, and up to 40 statistics on host, pathogen, location, time, and impact.</p>
+          <h2>Event GRID</h2>
+          <p>Collection of GRID events from 1940 to present. Includes a summary, narrative, media collection, and up to 40 statistics on host, pathogen, location, time, and impact.</p>
           <p><a class="btn btn-default" href="{{pathFor 'ascendingOutbreaks'}}" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
-          <h2>Disease Pages</h2>
-          <p>Encyclopedic summary pages for the diseases behind the EID events. Includes collections of EID events, historic trends, media, symptoms, links, and diagnostics.</p>
+          <h2>Resources</h2>
+          <p>Collections of data for GRID events, historic trends, media, symptoms, links, and diagnostics.</p>
           <p><a class="btn btn-default" href="{{pathFor 'resourcesPage'}}" role="button">View details &raquo;</a></p>
        </div>
         <div class="col-md-4">
           <h2>Library</h2>
-          <p>Collection of media for EID events. Includes primary scienitific literature, news reports, and social media. The collection includes metadata and can be connected to citation managers.</p>
+          <p>Collection of media for GRID events. Includes primary scienitific literature, news reports, and social media. The collection includes metadata and can be connected to citation managers.</p>
           <p><a class="btn btn-default" href="{{pathFor 'libraryPage'}}" role="button">View details &raquo;</a></p>
         </div>
       </div>
